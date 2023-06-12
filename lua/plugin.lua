@@ -50,4 +50,8 @@ return require("packer").startup(function(use)
 	use "L3MON4D3/LuaSnip"
 	use "saadparwaiz1/cmp_luasnip"
 	use "rafamadriz/friendly-snippets"
+	-- [[ Starting Screen ]]
+	use "startup-nvim/startup.nvim"
+	-- [[ Discord Integration ]]
+	use "andweeb/presence.nvim"
 end)

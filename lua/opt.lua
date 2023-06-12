@@ -10,7 +10,7 @@ require("nord").set()
 global.nord_disable_background = true
 
 -- [[ Context ]]
-options.colorcolumn = "80"
+options.colorcolumn = ""
 options.number = true
 options.relativenumber = false
 options.scrolloff = 4
