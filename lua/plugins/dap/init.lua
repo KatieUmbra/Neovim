@@ -1,5 +1,6 @@
 require("plugins.dap.cpp")
 require("plugins.dap.rust")
+require("plugins.dap.python")
 
 local vim = vim
 local dap = require("dap")
@@ -58,7 +59,7 @@ dapui.setup {
 				},
 				{
 					id = "repl",
-					size = 0.15
+					size = 0.25
 				}
 			},
 			size = 40,

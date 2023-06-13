@@ -1,9 +1,9 @@
 local dap = require("dap")
 
 dap.configurations.rust = {
-    {
-        type = "codelldb",
-        request = "launch",
+ {
+ type = "codelldb",
+ request = "launch",
         -- This is where cargo outputs the executable
         program = function ()
             os.execute("cargo build &> /dev/null")
@@ -22,7 +22,7 @@ dap.configurations.rust = {
         -- stopOnEntry = true,
         MIMode = "gdb",
         miDebuggerPath = "/usr/bin/gdb",
-        setupCommands = {
+        etupCommands = {
             {
                 text = "-enable-pretty-printing",
                 description = "enable pretty printing",
