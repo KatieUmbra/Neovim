@@ -45,39 +45,42 @@ dapui.setup {
 	layouts = {
 		{
 			elements = {
-				"console"
-			},
-			size = 0.25,
-			position = "Bottom"
-		},
-		{
-			elements = {
-				"Watches",
+				{
+					id = "watches",
+					size = 0.33
+				},
 				{
 					id = "scopes",
-					size = 0.5
+					size = 0.33
 				},
 				{
 					id = "repl",
-					size = 0.25
+					size = 0.34
 				}
 			},
 			size = 40,
 			position = "left"
+		},
+		{
+			elements = {
+				"console"
+			},
+			size = 0.25,
+			position = "bottom"
 		}
 	},
 	controls = {
 		enabled = true,
 		element = "repl",
 		icons = {
-            pause = "",
-            play = "",
-            step_into = "",
-            step_over = "",
-            step_out = "",
-            step_back = "",
-            run_last = "↻",
-            terminate = "□",
+            pause = "",
+            play = "",
+            step_into = "",
+            step_over = "",
+            step_out = "",
+            step_back = "",
+            run_last = "",
+            terminate = "",
         }
 	}
 }
