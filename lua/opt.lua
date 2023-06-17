@@ -8,6 +8,7 @@ global.localleader = " "
 -- [[ ColorScheme ]]
 require("nord").set()
 global.nord_disable_background = true
+global.nord_borders = true
 
 -- [[ Context ]]
 options.colorcolumn = ""
@@ -44,11 +45,6 @@ options.splitbelow = false
 global.loaded_netrw = 1
 global.loaded_netrwPlugin = 1
 global.nvim_tree_auto_close = 1
-
--- [[ Vimspector ]]
-global.vimspector_sidebar_width = 85
-global.vimspector_bottombar_height = 15
-global.vimspector_terminal_maxwidth = 70
 
 -- [[ Completions ]]
 options.completeopt = {"menu", "menuone", "noselect"}
