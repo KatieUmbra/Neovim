@@ -36,6 +36,7 @@ options.expandtab = false
 options.shiftwidth = 4
 options.softtabstop = 4
 options.tabstop = 4
+options.fillchars:append { eob = " " }
 
 -- [[ Splits ]]
 options.splitright = false
