@@ -18,16 +18,23 @@ cmp.setup {
 		{name = 'luasnip', keyword_length = 2},
 	},
 	window = {
-		documentation = cmp.config.window.bordered()
+		documentation = {
+			border = "rounded",
+			scrollbar = '║'
+		},
+		completion = {
+			border = "rounded",
+			scrollbar = "║"
+		}
 	},
 	formatting = {
 		fields = {'menu', 'abbr', 'kind'},
 		format = function(entry, item)
 			local menu_icon = {
-				nvim_lsp = 'λ',
-				luasnip = '⋗',
-				buffer = 'Ω',
-				path = '🖫',
+				nvim_lsp = '󰊕',
+				luasnip = '',
+				buffer = '',
+				path = '',
 			}
 			item.menu = menu_icon[entry.source.name]
 			return item
@@ -46,7 +53,6 @@ cmp.setup {
 
 		['<C-e>'] = cmp.mapping.abort(),
 		['<C-y>'] = cmp.mapping.confirm({select = true}),
-		['<CR>'] = cmp.mapping.confirm({select = false}),
 
 		['<C-f>'] = cmp.mapping(function(fallback)
 			if luasnip.jumpable(1) then

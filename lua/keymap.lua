@@ -1,10 +1,15 @@
 -- [[ -- SET MAPPING -- ]]
+local vim = vim
 local set = vim.keymap.set
-local defaults = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+local defaults = {silent = true, nowait = true}
+local defaults_debug = {silent = true, noremap = true}
 
--- [[ Nvim Tree ]]
--- Look -> plugins/nvimtree.lua
-set("n", "<A-1>", ":NvimTreeToggle<CR>")
+-- [[ Neo Tree ]]
+set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults)
+set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults)
+set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults)
+set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults)
+set("n", "<leader>f", ":NeoTreeFocus<CR>", defaults)
 
 -- [[ Debugger ]]
 local dap = require("dap")
@@ -14,50 +19,50 @@ set("n","<F5>",
 	function()
 		dap.continue()
 		dapui.open()
-	end, {silent = true, noremap = true, expr = false},
+	end, defaults_debug,
 set("n","<F12>",
-	function() 
+	function()
 		dap.terminate()
 		dapui.close()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
-	end, {silent = true, noremap = true, expr = false}),
-set("n","<S-F5>", 
+	end, defaults_debug),
+set("n","<S-F5>",
 	function()
 		dap.terminate()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
 		dap.continue()
-	end, defaults),
+	end, defaults_debug),
 set("n","<leader>B",
 	function()
 		dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
-	end, defaults),
-set("n","<F8>", 
+	end, defaults_debug),
+set("n","<F8>",
 	function()
 		dap.toggle_breakpoint()
-	end, defaults),
-set("n","<F20>", 
+	end, defaults_debug),
+set("n","<F20>",
 	function()
 		dap.clear_breakpoints()
-	end, defaults),
-set("n","<F10>", 
+	end, defaults_debug),
+set("n","<F10>",
 	function()
 		dap.step_over()
-	end, defaults),
-set("n", "<F11>", 
+	end, defaults_debug),
+set("n", "<F11>",
 	function()
 		dap.step_into()
-	end, defaults),
-set("n", "<F23>", 
+	end, defaults_debug),
+set("n", "<F23>",
 	function()
 		dap.step_out()
-	end),
-set("n", "<leader>dp", 
+	end, defaults_debug),
+set("n", "<leader>dp",
 	function()
 		dap.pause()
-	end),
-set("n", "<leader>rc", 
+	end, defaults_debug),
+set("n", "<leader>rc",
 	function()
 		dap.run_to_cursor()
-	end))
+	end), defaults_debug)
