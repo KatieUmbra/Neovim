@@ -15,7 +15,8 @@ return require("packer").startup(function(use)
 	-- [[ Icons ]]
 	use "nvim-tree/nvim-web-devicons"
 	-- [[ File Tree ]]
-	use "nvim-tree/nvim-tree.lua"
+	use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
+	use "MunifTanjim/nui.nvim"
 	-- [[ Color Theme ]]
 	use "shaunsingh/nord.nvim"
 	-- [[ Git Status ]]

@@ -1,7 +1,6 @@
 require("luasnip.loaders.from_vscode").lazy_load()
 
 local lspconfig = require("lspconfig")
-require("mason").setup()
 local lsp_defaults = lspconfig.util.default_config
 lsp_defaults.capabilities = vim.tbl_deep_extend(
 	"force",
