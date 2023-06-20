@@ -9,7 +9,7 @@ set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults)
 set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults)
 set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults)
 set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults)
-set("n", "<leader>f", ":NeoTreeFocus<CR>", defaults)
+set("n", "<leader>nt", ":NeoTreeFocus<CR>", {silent = true})
 
 -- [[ Debugger ]]
 local dap = require("dap")
