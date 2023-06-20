@@ -18,7 +18,7 @@ return require("packer").startup(function(use)
 	use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
 	use "MunifTanjim/nui.nvim"
 	-- [[ Color Theme ]]
-	use "shaunsingh/nord.nvim"
+	use "nordtheme/vim"
 	-- [[ Git Status ]]
 	use "lewis6991/gitsigns.nvim"
 	-- [[ Top Bar ]]

@@ -1,3 +1,4 @@
+local vim = vim
 local options = vim.opt
 local global = vim.g
 
@@ -6,9 +7,14 @@ global.mapleader = " "
 global.localleader = " "
 
 -- [[ ColorScheme ]]
-require("nord").set()
-global.nord_disable_background = true
-global.nord_borders = true
+vim.cmd[[
+	colorscheme nord
+]]
+global.nord_cursor_line_number_background = 1
+global.nord_uniform_status_lines = 1
+global.nord_bold_vertical_split_line = 1
+global.nord_italic_comments = 1
+global.nord_underline = 1
 
 -- [[ Context ]]
 options.colorcolumn = ""

@@ -1,7 +1,6 @@
 vim.g.barbar_auto_setup = false
 
 require("barbar").setup {
-	auto_hide = true,
 	animation = false,
 	tabpages = true,
 	focus_on_close = "right",
