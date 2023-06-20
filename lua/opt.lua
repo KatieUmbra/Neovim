@@ -48,10 +48,5 @@ options.fillchars:append { eob = "󰄛" }
 options.splitright = false
 options.splitbelow = false
 
--- [[ Nvim Tree ]]
-global.loaded_netrw = 1
-global.loaded_netrwPlugin = 1
-global.nvim_tree_auto_close = 1
-
 -- [[ Completions ]]
 options.completeopt = {"menu", "menuone", "noselect"}
