@@ -1,4 +1,5 @@
 local dap = require("dap")
+local vim = vim
 
 dap.adapters.python = function(cb, config)
 	if config.request == "attach" then
@@ -30,6 +31,17 @@ dap.configurations.python = {
 		request = "launch",
 		name = "Launch File",
 		program = "${file}",
+		console = "integratedTerminal",
+		cwd = "${workspaceFolder}",
+		args = function ()
+			local argv = {}
+			arg = vim.fn.input(string.format("Arguments: "))
+			for a in string.gmatch(arg, "%S+") do
+                table.insert(argv, a)
+            end
+            vim.cmd('echo ""')
+            return argv
+		end,
 		pythonPath = function()
 			local cwd = vim.fn.getcwd()
 			if vim.fn.executable(cwd.."/venv/bin/python") == 1 then
