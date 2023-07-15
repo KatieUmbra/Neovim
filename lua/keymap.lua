@@ -3,6 +3,7 @@ local vim = vim
 local set = vim.keymap.set
 local defaults = {silent = true, nowait = true}
 local defaults_debug = {silent = true, noremap = true}
+local disable = {silent = true, noremap = true}
 
 -- [[ Neo Tree ]]
 set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults)
@@ -10,6 +11,16 @@ set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults)
 set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults)
 set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults)
 set("n", "<leader>nt", ":NeoTreeFocus<CR>", {silent = true})
+
+-- [[ Disable Arrow Keys ]]
+set("n", "<Right>", ":echoe 'Use [L]'<CR>", disable)
+set("n", "<Left>", ":echoe 'Use [H]'<CR>", disable)
+set("n", "<Up>", ":echoe 'Use [K]'<CR>", disable)
+set("n", "<Down>", ":echoe 'Use [J]'<CR>", disable)
+
+-- [[ Color Picker ]]
+
+set("n", "<C-c>", ":CccPick<CR>", defaults_debug)
 
 -- [[ Debugger ]]
 local dap = require("dap")

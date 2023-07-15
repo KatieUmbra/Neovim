@@ -1,3 +1,6 @@
+local ascii = require("ascii")
+local title = ascii.art.text.neovim.delta_corps_priest1
+
 require("startup").setup {
 	-- every line should be same width without escaped \
     header = {
@@ -7,19 +10,7 @@ require("startup").setup {
         fold_section = false,
         title = "Header",
         margin = 5,
-        content = {
-            "     ___         ___         ___         ___     ",
-            "    /\\__\\       /\\  \\       /\\  \\       /\\  \\    ",
-            "   /::|  |     /::\\  \\     /::\\  \\     /::\\  \\   ",
-            "  /:|:|  |    /:/\\:\\  \\   /:/\\:\\  \\   /:/\\:\\  \\  ",
-            " /:/|:|  |__ /:/  \\:\\  \\ /::\\ \\:\\  \\ /:/  \\:\\__\\ ",
-            "/:/ |:| /\\__/:/__/ \\:\\__/:/\\:\\ \\:\\__/:/__/ \\:|__|",
-			"\\/__|:|/:/  \\:\\  \\ /:/  \\/_|::\\/:/  \\:\\  \\ /:/  /",
-			"    |:/:/  / \\:\\  /:/  /   |:|::/  / \\:\\  /:/  / ",
-			"    |::/  /   \\:\\/:/  /    |:|\\/__/   \\:\\/:/  /  ",
-			"    /:/  /     \\::/  /     |:|  |      \\::/__/   ",
-			"    \\/__/       \\/__/       \\|__|       ‾‾       "
-        },
+        content = title,
         highlight = "Statement",
         default_color = "",
         oldfiles_amount = 0,
@@ -51,7 +42,7 @@ require("startup").setup {
         fold_section = false,
         title = "Footer",
         margin = 5,
-        content = { "Neovim Katherine's Nord Theme" },
+        content = { "Katherine's Neovim Configuration" },
         highlight = "Number",
         default_color = "",
         oldfiles_amount = 0,

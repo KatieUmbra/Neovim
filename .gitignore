@@ -1,2 +1,4 @@
 ./plugin/
 ./plugin/packer_compiled.lua
+ignored.lua
+*.vim

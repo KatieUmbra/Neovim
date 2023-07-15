@@ -1,4 +1,5 @@
 local dap = require("dap")
+local vim = vim
 
 dap.configurations.rust = {
  {

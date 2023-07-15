@@ -27,7 +27,8 @@ require("nvim-treesitter.configs").setup {
 		"yaml",
 		"json",
 		"yuck",
-		"toml"
+		"toml",
+		"sxhkdrc"
 	},
 
 	sync_install = true,

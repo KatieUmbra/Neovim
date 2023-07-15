@@ -2,8 +2,10 @@ require("plugins")
 return require("packer").startup(function(use)
 	-- [[ Packer package manager ]]
 	use "wbthomason/packer.nvim"
-	-- [[ Yuck language for eww bar ]]
+	-- [[[ Configuration Languages ]]]
 	use "elkowar/yuck.vim"
+	use "kovetskiy/sxhkd-vim"
+	use "fladson/vim-kitty"
 	-- [[ Syntax highligthing ]]
 	use {
 		"nvim-treesitter/nvim-treesitter",
@@ -18,7 +20,7 @@ return require("packer").startup(function(use)
 	use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
 	use "MunifTanjim/nui.nvim"
 	-- [[ Color Theme ]]
-	use "nordtheme/vim"
+	use "EdenEast/nightfox.nvim"
 	-- [[ Git Status ]]
 	use "lewis6991/gitsigns.nvim"
 	-- [[ Top Bar ]]
@@ -55,4 +57,8 @@ return require("packer").startup(function(use)
 	use "startup-nvim/startup.nvim"
 	-- [[ Discord Integration ]]
 	use "andweeb/presence.nvim"
+	-- [[ Color Picker And Highligthing ]]
+	use "uga-rosa/ccc.nvim"
+	-- [[ Startup Ascii Art ]]
+	use "MaximilianLloyd/ascii.nvim"
 end)

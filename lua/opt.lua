@@ -8,7 +8,7 @@ global.localleader = " "
 
 -- [[ ColorScheme ]]
 vim.cmd[[
-	colorscheme nord
+	colorscheme duskfox
 ]]
 global.nord_cursor_line_number_background = 1
 global.nord_uniform_status_lines = 1

@@ -1,6 +1,6 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
-
+local vim = vim
 local select_opts = {
 	behavior = cmp.SelectBehavior.Select
 }
