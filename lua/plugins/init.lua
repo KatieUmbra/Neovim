@@ -1,3 +1,4 @@
+---@diagnostic disable: different-requires
 require("plugins.treesitter")
 require("plugins.devicons")
 require("plugins.barbar")
@@ -11,4 +12,5 @@ require("plugins.startup")
 require("plugins.presence")
 require("plugins.neotree")
 require("plugins.dap")
+require("plugins.lsp")
 require("plugins.nightfox")

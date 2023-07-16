@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
 	use "nvim-lualine/lualine.nvim"
 	-- [[ Useful Functions ]]
 	use "nvim-lua/plenary.nvim"
+	use "nvim-lua/popup.nvim"
 	-- [[ Search ]]
 	use "nvim-telescope/telescope.nvim"
 	-- [[ Linting and others. Etc.. ]]
@@ -61,4 +62,13 @@ return require("packer").startup(function(use)
 	use "uga-rosa/ccc.nvim"
 	-- [[ Startup Ascii Art ]]
 	use "MaximilianLloyd/ascii.nvim"
+	-- [[ Lsp Actions (Rename, Definition, Etc...) ]]
+	use "RishabhRD/lspactions"
+
+	-- [[ Lsp Configuration Plugins ]]
+
+	-- [[ C/C++ Lsp Configuration ]]
+	use "p00f/clangd_extensions.nvim"
+	-- [[ Rust Lsp Configuration ]]
+	use "simrat39/rust-tools.nvim"
 end)

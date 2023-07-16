@@ -89,6 +89,11 @@ cmp.setup {
 				fallback()
 			end
 			end, {'i', 's'}),
+	},
+	sorting = {
+		comparators = {
+			require("clangd_extensions.cmp_scores")
+		}
 	}
 }
 

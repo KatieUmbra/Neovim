@@ -1,28 +1,57 @@
 -- [[ -- SET MAPPING -- ]]
 local vim = vim
 local set = vim.keymap.set
-local defaults = {silent = true, nowait = true}
-local defaults_debug = {silent = true, noremap = true}
-local disable = {silent = true, noremap = true}
+local defaults_nt = {silent = true, nowait = true}
+local defaults = {silent = true, noremap = true}
 
 -- [[ Neo Tree ]]
-set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults)
-set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults)
-set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults)
-set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults)
+set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults_nt)
+set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults_nt)
+set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults_nt)
+set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults_nt)
 set("n", "<leader>nt", ":NeoTreeFocus<CR>", {silent = true})
 
 -- [[ Disable Arrow Keys ]]
-set("n", "<Right>", ":echoe 'Use [L]'<CR>", disable)
-set("n", "<Left>", ":echoe 'Use [H]'<CR>", disable)
-set("n", "<Up>", ":echoe 'Use [K]'<CR>", disable)
-set("n", "<Down>", ":echoe 'Use [J]'<CR>", disable)
+set("n", "<Right>", ":echoe 'Use [L]'<CR>", defaults)
+set("n", "<Left>", ":echoe 'Use [H]'<CR>", defaults)
+set("n", "<Up>", ":echoe 'Use [K]'<CR>", defaults)
+set("n", "<Down>", ":echoe 'Use [J]'<CR>", defaults)
 
 -- [[ Color Picker ]]
 
-set("n", "<C-c>", ":CccPick<CR>", defaults_debug)
+set("n", "<C-c>", ":CccPick<CR>", defaults)
+
+-- [[ Telescope ]]
+
+local builtin = require("telescope.builtin")
+set("n", "<leader>ff",	builtin.find_files,		defaults)
+set("n", "<leader>f",	builtin.live_grep,		defaults)
+set("n", "<leader>fb",	builtin.buffers,		defaults)
+set("n", "<leader>ft",	builtin.treesitter,		defaults)
+set("n", "<leader>fx",	builtin.diagnostics,	defaults)
+set("n", "<leader>fg",	builtin.git_status,		defaults)
+
+-- [[ Lsp Actions ]]
+local actions = require("lspactions")
+set("n", "<F18>",
+	function ()
+		actions.rename()
+	end, defaults)
+set("n", "<C-b>",
+	function ()
+		actions.definition()
+	end)
+set("n", "<F7>",
+	function ()
+		actions.implementation()
+	end)
+set("n", "<A-CR>",
+	function ()
+		vim.lsp.buf.code_action()
+	end)
 
 -- [[ Debugger ]]
+---@diagnostic disable-next-line: different-requires
 local dap = require("dap")
 local dapui = require("dapui")
 
@@ -30,50 +59,50 @@ set("n","<F5>",
 	function()
 		dap.continue()
 		dapui.open()
-	end, defaults_debug,
+	end, defaults,
 set("n","<F12>",
 	function()
 		dap.terminate()
 		dapui.close()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
-	end, defaults_debug),
+	end, defaults),
 set("n","<S-F5>",
 	function()
 		dap.terminate()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
 		dap.continue()
-	end, defaults_debug),
+	end, defaults),
 set("n","<leader>B",
 	function()
 		dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
-	end, defaults_debug),
+	end, defaults),
 set("n","<F8>",
 	function()
 		dap.toggle_breakpoint()
-	end, defaults_debug),
+	end, defaults),
 set("n","<F20>",
 	function()
 		dap.clear_breakpoints()
-	end, defaults_debug),
+	end, defaults),
 set("n","<F10>",
 	function()
 		dap.step_over()
-	end, defaults_debug),
+	end, defaults),
 set("n", "<F11>",
 	function()
 		dap.step_into()
-	end, defaults_debug),
+	end, defaults),
 set("n", "<F23>",
 	function()
 		dap.step_out()
-	end, defaults_debug),
+	end, defaults),
 set("n", "<leader>dp",
 	function()
 		dap.pause()
-	end, defaults_debug),
+	end, defaults),
 set("n", "<leader>rc",
 	function()
 		dap.run_to_cursor()
-	end), defaults_debug)
+	end), defaults)
