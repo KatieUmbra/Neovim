@@ -1,6 +1,11 @@
 local dap = require("dap")
 local vim = vim
 
+local function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
 dap.adapters.codelldb = {
 	type = "server",
 	port = "${port}",
@@ -15,15 +20,17 @@ dap.configurations.cpp = {
 		type = "codelldb",
 		request = "launch",
 		program = function()
-		local using_cmake = vim.fn.input(string.format("Debug CMake?(yes/no): "))
-		local is_using_cmake = string.upper(using_cmake) == "YES" or string.upper(using_cmake) == "Y"
+		local is_using_cmake = file_exists("CMakeLists.txt")
 		if is_using_cmake then
-			os.execute("rm build/bin-name")
-			os.execute("find build -maxdepth 1 -type f ! -size 0 -exec grep -IL build '{}' \\; >> build/bin-name")
-			local f = assert(io.open("build/bin-name", "r"))
-			local line = f:read("a")
-			local bin = string.gsub(line, "[\t\n]", "")
-			os.execute("make -C build >> /dev/null")
+			local command = "find ! -type d -path './build/bin/*' | grep -v 'Test' | sed 's#.*/##'"
+			local resultFile = io.popen(command, "r")
+			local result = ""
+			if (resultFile ~= nil) then
+				result = resultFile:read("*a")
+				resultFile:close()
+			end
+			local bin = "build/bin/" .. result:gsub("[\n\r]", "");
+			os.execute("cmake --build build --config Debug >> /dev/null")
 			return bin
 		else
 			local filetype = vim.bo.filetype
