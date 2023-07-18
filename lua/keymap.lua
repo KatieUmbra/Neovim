@@ -18,11 +18,9 @@ set("n", "<Up>", ":echoe 'Use [K]'<CR>", defaults)
 set("n", "<Down>", ":echoe 'Use [J]'<CR>", defaults)
 
 -- [[ Color Picker ]]
-
 set("n", "<C-c>", ":CccPick<CR>", defaults)
 
 -- [[ Telescope ]]
-
 local builtin = require("telescope.builtin")
 set("n", "<leader>ff",	builtin.find_files,		defaults)
 set("n", "<leader>f",	builtin.live_grep,		defaults)
@@ -30,6 +28,13 @@ set("n", "<leader>fb",	builtin.buffers,		defaults)
 set("n", "<leader>ft",	builtin.treesitter,		defaults)
 set("n", "<leader>fx",	builtin.diagnostics,	defaults)
 set("n", "<leader>fg",	builtin.git_status,		defaults)
+
+-- [[ Terminal ]]
+set("n", "<F60>", ":ToggleTerm<CR>", defaults)
+
+-- [[ Tasks ]]
+set("n", "<F17>", ":Telescope toggletasks spawn<CR>",	defaults)
+set("n", "<F19>", ":Telescope toggletasks select<CR>",	defaults)
 
 -- [[ Lsp Actions ]]
 local actions = require("lspactions")

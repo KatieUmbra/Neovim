@@ -64,6 +64,12 @@ return require("packer").startup(function(use)
 	use "MaximilianLloyd/ascii.nvim"
 	-- [[ Lsp Actions (Rename, Definition, Etc...) ]]
 	use "RishabhRD/lspactions"
+	-- [[ Terminal ]]
+	use "akinsho/toggleterm.nvim"
+	-- [[ Run Tasks ]]
+	use "jedrzejboczar/toggletasks.nvim"
+	-- [[ Keybinding Suggestions ]]
+	use "folke/which-key.nvim"
 
 	-- [[ Lsp Configuration Plugins ]]
 

@@ -3,14 +3,17 @@ require("nightfox").setup {
 		terminal_colors = true,
 		styles = {
 			comments = "italic",
-			keywords = "bold",
-			types = "bold",
+			types = "bold,italic",
+			conditionals = "italic",
+			functions = "italic"
 		}
 	},
 	specs = {
-		all = {
+		duskfox = {
 			syntax = {
-				types = "magenta.bright"
+				type = "magenta.bright",
+				keyword = "red",
+				conditional = "pink.bright"
 			}
 		}
 	}
