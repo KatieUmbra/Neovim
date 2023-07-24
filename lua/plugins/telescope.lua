@@ -9,3 +9,4 @@ telescope.setup {
 }
 
 telescope.load_extension("toggletasks")
+telescope.load_extension("notify")

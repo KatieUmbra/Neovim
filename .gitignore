@@ -2,3 +2,4 @@
 ./plugin/packer_compiled.lua
 ignored.lua
 *.vim
+/syntax

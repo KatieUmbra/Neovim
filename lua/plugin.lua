@@ -6,6 +6,8 @@ return require("packer").startup(function(use)
 	use "elkowar/yuck.vim"
 	use "kovetskiy/sxhkd-vim"
 	use "fladson/vim-kitty"
+	-- [[ Neovim Api Helper ]]
+	use "folke/neodev.nvim"
 	-- [[ Syntax highligthing ]]
 	use {
 		"nvim-treesitter/nvim-treesitter",
@@ -20,7 +22,7 @@ return require("packer").startup(function(use)
 	use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
 	use "MunifTanjim/nui.nvim"
 	-- [[ Color Theme ]]
-	use "EdenEast/nightfox.nvim"
+	use "rose-pine/neovim"
 	-- [[ Git Status ]]
 	use "lewis6991/gitsigns.nvim"
 	-- [[ Top Bar ]]
@@ -70,6 +72,16 @@ return require("packer").startup(function(use)
 	use "jedrzejboczar/toggletasks.nvim"
 	-- [[ Keybinding Suggestions ]]
 	use "folke/which-key.nvim"
+	-- [[ Notifications ]]
+	use "rcarriga/nvim-notify"
+	-- [[ Diagnostics Helper ]]
+	use "folke/trouble.nvim"
+	-- [[ Zen mode ]]
+	use "Pocco81/true-zen.nvim"
+	-- [[ Prettier Folds ]]
+	use "anuvyklack/pretty-fold.nvim"
+	-- [[ Prettier UI ]]
+	use "stevearc/dressing.nvim"
 
 	-- [[ Lsp Configuration Plugins ]]
 

@@ -40,7 +40,7 @@ fun.sign_define (
 )
 
 dap.defaults.fallback.force_external_terminal = true
-daptext.setup()
+daptext.setup {}
 dapui.setup {
 	layouts = {
 		{

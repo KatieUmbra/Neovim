@@ -1,5 +1,11 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "sdfkls"
+    ],
+    "completion.autoRequire": false,
+    "workspace.checkThirdParty": false,
+    "diagnostics.disable": [
+        "trailing-space"
     ]
 }

@@ -22,6 +22,10 @@ dap.configurations.cpp = {
 		program = function()
 		local is_using_cmake = file_exists("CMakeLists.txt")
 		if is_using_cmake then
+			local test = ""
+			vim.ui.input({prompt="Debug Tests? (Y/N): "}, function(str)
+				test = str
+			end)
 			local command = "find ! -type d -path './build/bin/*' | grep -v 'Test' | sed 's#.*/##'"
 			local resultFile = io.popen(command, "r")
 			local result = ""
@@ -31,7 +35,11 @@ dap.configurations.cpp = {
 			end
 			local bin = "build/bin/" .. result:gsub("[\n\r]", "");
 			os.execute("cmake --build build --config Debug >> /dev/null")
-			return bin
+			if (test == "y") then
+				return "build/bin/Test"
+			else
+				return bin
+			end
 		else
 			local filetype = vim.bo.filetype
 			local filename = vim.fn.expand("%")

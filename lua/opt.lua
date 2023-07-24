@@ -7,14 +7,8 @@ global.mapleader = " "
 global.localleader = " "
 
 -- [[ ColorScheme ]]
-vim.cmd[[
-	colorscheme duskfox
-]]
-global.nord_cursor_line_number_background = 1
-global.nord_uniform_status_lines = 1
-global.nord_bold_vertical_split_line = 1
-global.nord_italic_comments = 1
-global.nord_underline = 1
+-- vim.cmd [[ colorscheme {YOUR_COLORSCHEME_HERE} ]
+vim.o.background = "dark"
 
 -- [[ Context ]]
 options.colorcolumn = ""
@@ -50,3 +44,10 @@ options.splitbelow = false
 
 -- [[ Completions ]]
 options.completeopt = {"menu", "menuone", "noselect"}
+
+-- [[ Notifications ]]
+vim.notify = require("notify")
+
+--[[ Folding ]]
+options.foldmethod = "expr"
+options.foldexpr = "nvim_treesitter#foldexpr()"

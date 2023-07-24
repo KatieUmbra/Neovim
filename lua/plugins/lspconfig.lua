@@ -14,11 +14,18 @@ lspconfig.cssmodules_ls.setup	{}
 lspconfig.docker_compose_language_service.setup {}
 lspconfig.dockerls.setup		{}
 lspconfig.jsonls.setup			{}
-lspconfig.lua_ls.setup			{}
-lspconfig.luau_lsp.setup		{}
 lspconfig.omnisharp.setup		{}
 lspconfig.pylyzer.setup			{}
 lspconfig.pyright.setup			{}
 lspconfig.pylsp.setup			{}
 lspconfig.vimls.setup			{}
 lspconfig.yamlls.setup			{}
+lspconfig.lua_ls.setup			{
+	settings = {
+		Lua = {
+			completion = {
+				callSnippet = "Replace"
+			}
+		}
+	}
+}

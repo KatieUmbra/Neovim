@@ -1,5 +1,4 @@
 -- [[ -- SET MAPPING -- ]]
-local vim = vim
 local set = vim.keymap.set
 local defaults_nt = {silent = true, nowait = true}
 local defaults = {silent = true, noremap = true}
@@ -9,7 +8,7 @@ set("n", "<A-1>", ":NeoTreeShowToggle filesystem<CR>", defaults_nt)
 set("n", "<A-0>", ":NeoTreeShowToggle git_status<CR>", defaults_nt)
 set("n", "<A-2>", ":NeoTreeShowToggle buffers<CR>", defaults_nt)
 set("n", "<A-3>", ":NeoTreeShowToggle document_symbols<CR>", defaults_nt)
-set("n", "<leader>nt", ":NeoTreeFocus<CR>", {silent = true})
+set("n", "ft", ":NeoTreeFocus<CR>", {silent = true})
 
 -- [[ Disable Arrow Keys ]]
 set("n", "<Right>", ":echoe 'Use [L]'<CR>", defaults)
@@ -36,6 +35,28 @@ set("n", "<F60>", ":ToggleTerm<CR>", defaults)
 set("n", "<F17>", ":Telescope toggletasks spawn<CR>",	defaults)
 set("n", "<F19>", ":Telescope toggletasks select<CR>",	defaults)
 
+-- [[ Diagnostics ]]
+set("n", "<A-]>", ":TroubleToggle workspace_diagnostics<CR>", defaults)
+
+-- [[ Zen Mode ]]
+set("n", "<A-z>", ":TZAtaraxis<CR>", defaults)
+
+-- [[ ================== ]]
+-- [[ Custom Keybindings ]]
+-- [[ ================== ]]
+
+set("n", "<C-y>", function ()
+	vim.api.nvim_del_current_line()
+end, defaults)
+
+set("n", "dd", function ()
+	vim.api.nvim_del_current_line()
+end, defaults)
+
+set("n", "<C-d>", "yyp", defaults)
+
+-- [[ ================== ]]
+
 -- [[ Lsp Actions ]]
 local actions = require("lspactions")
 set("n", "<F18>",
@@ -50,10 +71,7 @@ set("n", "<F7>",
 	function ()
 		actions.implementation()
 	end)
-set("n", "<A-CR>",
-	function ()
-		vim.lsp.buf.code_action()
-	end)
+set("n", "<A-CR>", ":lua require'lspactions'.code_action()<CR>", defaults)
 
 -- [[ Debugger ]]
 ---@diagnostic disable-next-line: different-requires
@@ -64,50 +82,50 @@ set("n","<F5>",
 	function()
 		dap.continue()
 		dapui.open()
-	end, defaults,
+	end, defaults)
 set("n","<F12>",
 	function()
 		dap.terminate()
 		dapui.close()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
-	end, defaults),
+	end, defaults)
 set("n","<S-F5>",
 	function()
 		dap.terminate()
 		vim.cmd("sleep 50ms")
 		dap.repl.close()
 		dap.continue()
-	end, defaults),
+	end, defaults)
 set("n","<leader>B",
 	function()
 		dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
-	end, defaults),
+	end, defaults)
 set("n","<F8>",
 	function()
 		dap.toggle_breakpoint()
-	end, defaults),
+	end, defaults)
 set("n","<F20>",
 	function()
 		dap.clear_breakpoints()
-	end, defaults),
+	end, defaults)
 set("n","<F10>",
 	function()
 		dap.step_over()
-	end, defaults),
+	end, defaults)
 set("n", "<F11>",
 	function()
 		dap.step_into()
-	end, defaults),
+	end, defaults)
 set("n", "<F23>",
 	function()
 		dap.step_out()
-	end, defaults),
+	end, defaults)
 set("n", "<leader>dp",
 	function()
 		dap.pause()
-	end, defaults),
+	end, defaults)
 set("n", "<leader>rc",
 	function()
 		dap.run_to_cursor()
-	end), defaults)
+	end, defaults)
