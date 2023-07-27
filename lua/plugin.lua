@@ -1,92 +1,111 @@
-require("plugins")
-return require("packer").startup(function(use)
-	-- [[ Packer package manager ]]
-	use "wbthomason/packer.nvim"
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- [[ Leader Keys ]]
+vim.g.mapleader = " "
+vim.g.localleader = " "
+
+require("lazy").setup({
 	-- [[[ Configuration Languages ]]]
-	use "elkowar/yuck.vim"
-	use "kovetskiy/sxhkd-vim"
-	use "fladson/vim-kitty"
+	"elkowar/yuck.vim",
+	"kovetskiy/sxhkd-vim",
+	"fladson/vim-kitty",
 	-- [[ Neovim Api Helper ]]
-	use "folke/neodev.nvim"
+	"folke/neodev.nvim",
 	-- [[ Syntax highligthing ]]
-	use {
+	{
 		"nvim-treesitter/nvim-treesitter",
-		run = function()
+		build = function()
 			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
 			ts_update()
 		end
-	}
+	},
 	-- [[ Icons ]]
-	use "nvim-tree/nvim-web-devicons"
+	"nvim-tree/nvim-web-devicons",
 	-- [[ File Tree ]]
-	use {"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}
-	use "MunifTanjim/nui.nvim"
+	{"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"},
+	"MunifTanjim/nui.nvim",
 	-- [[ Color Theme ]]
-	use "rose-pine/neovim"
+	"rose-pine/neovim",
 	-- [[ Git Status ]]
-	use "lewis6991/gitsigns.nvim"
+	"lewis6991/gitsigns.nvim",
 	-- [[ Top Bar ]]
-	use "romgrk/barbar.nvim"
+	"romgrk/barbar.nvim",
 	-- [[ Status Line ]]
-	use "nvim-lualine/lualine.nvim"
+	"nvim-lualine/lualine.nvim",
 	-- [[ Useful Functions ]]
-	use "nvim-lua/plenary.nvim"
-	use "nvim-lua/popup.nvim"
+	"nvim-lua/plenary.nvim",
+	"nvim-lua/popup.nvim",
 	-- [[ Search ]]
-	use "nvim-telescope/telescope.nvim"
+	"nvim-telescope/telescope.nvim",
 	-- [[ Linting and others. Etc.. ]]
-	use { "williamboman/mason.nvim", run = ":MasonUpdate<CR>"}
+	{ "williamboman/mason.nvim", build = ":MasonUpdate<CR>"},
 	-- [[ LSP configurations ]]
-	use "neovim/nvim-lspconfig"
+	"neovim/nvim-lspconfig",
 	-- [[ Illuminate similar words]]
-	use "RRethy/vim-illuminate"
+	"RRethy/vim-illuminate",
 	-- [[ Auto close pairs ]]
-	use "windwp/nvim-autopairs"
+	"windwp/nvim-autopairs",
 	-- [[ Debugging ]]
-	use "mfussenegger/nvim-dap"
-	use "rcarriga/nvim-dap-ui"
-	use "theHamsta/nvim-dap-virtual-text"
+	"mfussenegger/nvim-dap",
+	"rcarriga/nvim-dap-ui",
+	"theHamsta/nvim-dap-virtual-text",
 	-- [[ Completion ]]
-	use "hrsh7th/nvim-cmp"
-	use "hrsh7th/cmp-buffer"
-	use "hrsh7th/cmp-path"
-	use "hrsh7th/cmp-nvim-lsp"
-	use "williamboman/mason-lspconfig.nvim"
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-nvim-lsp",
+	"williamboman/mason-lspconfig.nvim",
 	-- [[ Completion Snippets ]]
-	use "L3MON4D3/LuaSnip"
-	use "saadparwaiz1/cmp_luasnip"
-	use "rafamadriz/friendly-snippets"
+	"L3MON4D3/LuaSnip",
+	"saadparwaiz1/cmp_luasnip",
+	"rafamadriz/friendly-snippets",
 	-- [[ Starting Screen ]]
-	use "startup-nvim/startup.nvim"
+	"startup-nvim/startup.nvim",
 	-- [[ Discord Integration ]]
-	use "andweeb/presence.nvim"
+	"andweeb/presence.nvim",
 	-- [[ Color Picker And Highligthing ]]
-	use "uga-rosa/ccc.nvim"
+	"uga-rosa/ccc.nvim",
 	-- [[ Startup Ascii Art ]]
-	use "MaximilianLloyd/ascii.nvim"
+	"MaximilianLloyd/ascii.nvim",
 	-- [[ Lsp Actions (Rename, Definition, Etc...) ]]
-	use "RishabhRD/lspactions"
+	"RishabhRD/lspactions",
 	-- [[ Terminal ]]
-	use "akinsho/toggleterm.nvim"
+	"akinsho/toggleterm.nvim",
 	-- [[ Run Tasks ]]
-	use "jedrzejboczar/toggletasks.nvim"
+	"jedrzejboczar/toggletasks.nvim",
 	-- [[ Keybinding Suggestions ]]
-	use "folke/which-key.nvim"
+	"folke/which-key.nvim",
 	-- [[ Notifications ]]
-	use "rcarriga/nvim-notify"
+	"rcarriga/nvim-notify",
 	-- [[ Diagnostics Helper ]]
-	use "folke/trouble.nvim"
+	"folke/trouble.nvim",
 	-- [[ Zen mode ]]
-	use "Pocco81/true-zen.nvim"
+	"Pocco81/true-zen.nvim",
 	-- [[ Prettier Folds ]]
-	use "anuvyklack/pretty-fold.nvim"
+	"anuvyklack/pretty-fold.nvim",
 	-- [[ Prettier UI ]]
-	use "stevearc/dressing.nvim"
+	"stevearc/dressing.nvim",
+	-- [[ Indent lines ]]
+	{"lukas-reineke/indent-blankline.nvim", lazy = false},
+	"HiPhish/rainbow-delimiters.nvim",
 
 	-- [[ Lsp Configuration Plugins ]]
 
 	-- [[ C/C++ Lsp Configuration ]]
-	use "p00f/clangd_extensions.nvim"
+	"p00f/clangd_extensions.nvim",
 	-- [[ Rust Lsp Configuration ]]
-	use "simrat39/rust-tools.nvim"
-end)
+	"simrat39/rust-tools.nvim"
+}, {})
+
+require("plugins")

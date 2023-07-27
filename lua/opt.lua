@@ -1,10 +1,5 @@
 local vim = vim
 local options = vim.opt
-local global = vim.g
-
--- [[ Leader Key ]]
-global.mapleader = " "
-global.localleader = " "
 
 -- [[ ColorScheme ]]
 -- vim.cmd [[ colorscheme {YOUR_COLORSCHEME_HERE} ]

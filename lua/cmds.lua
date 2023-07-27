@@ -13,7 +13,7 @@ cmd(
 
 -- [[ Open folds when file is opened ]]
 cmd(
-	{"BufEnter", "CursorHold"},
+	{"BufWinEnter"},
 	{
 		command = [[
 			if getbufvar(bufnr(), '&buftype', 'ERROR') == ''
