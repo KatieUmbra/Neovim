@@ -1,6 +1,7 @@
 require("plugins.dap.cpp")
 require("plugins.dap.rust")
 require("plugins.dap.python")
+require("plugins.dap.zig")
 
 local vim = vim
 local dap = require("dap")

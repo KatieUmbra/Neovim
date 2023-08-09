@@ -3,7 +3,32 @@ require("clangd_extensions").setup {
 		cmd = {
 			"clangd",
 			"--background-index",
-			"--clang-tidy"
+			"--enable-config"
+		}
+	},
+	extensions = {
+		ast = {
+			role_icons = {
+                type = "",
+                declaration = "",
+                expression = "",
+                specifier = "",
+                statement = "",
+                ["template argument"] = "",
+            },
+
+            kind_icons = {
+                Compound = "",
+                Recovery = "",
+                TranslationUnit = "",
+                PackExpansion = "",
+                TemplateTypeParm = "",
+                TemplateTemplateParm = "",
+                TemplateParamObject = "",
+            }
+		},
+		symbol_info = {
+			border = "rounded"
 		}
 	}
 }

@@ -17,6 +17,7 @@ dap.adapters.codelldb = {
 
 dap.configurations.cpp = {
 	{
+		name = "Launch C++",
 		type = "codelldb",
 		request = "launch",
 		program = function()

@@ -3,6 +3,7 @@ local vim = vim
 
 dap.configurations.rust = {
  {
+ name = "rust",
  type = "codelldb",
  request = "launch",
         -- This is where cargo outputs the executable

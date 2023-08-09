@@ -41,6 +41,10 @@ set("n", "<A-]>", ":TroubleToggle workspace_diagnostics<CR>", defaults)
 -- [[ Zen Mode ]]
 set("n", "<A-z>", ":TZAtaraxis<CR>", defaults)
 
+-- [[ Clangd Extensions ]]
+set("n", "<leader>if", ":ClangdSymbolInfo<CR>", defaults)
+set("n", "as", ":ClangdAST<CR>")
+
 -- [[ ================== ]]
 -- [[ Custom Keybindings ]]
 -- [[ ================== ]]

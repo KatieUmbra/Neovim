@@ -12,6 +12,6 @@ require("barbar").setup {
 		preset = "powerline"
 	},
 	sidebar_filetypes = {
-		["neo-tree"] = { event = "BufWipeout", text = "       󰔱 NeoTree" }
+		["neo-tree"] = { event = "BufWipeout", text = "      󰔱 NeoTree " }
 	}
 }

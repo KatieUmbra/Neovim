@@ -8,6 +8,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 	require("cmp_nvim_lsp").default_capabilities()
 )
 
+lspconfig.zls.setup				{}
 lspconfig.cmake.setup			{}
 lspconfig.cssls.setup			{}
 lspconfig.cssmodules_ls.setup	{}
@@ -20,6 +21,7 @@ lspconfig.pyright.setup			{}
 lspconfig.pylsp.setup			{}
 lspconfig.vimls.setup			{}
 lspconfig.yamlls.setup			{}
+lspconfig.svelte.setup			{}
 lspconfig.lua_ls.setup			{
 	settings = {
 		Lua = {
