@@ -28,7 +28,11 @@ require("nvim-treesitter.configs").setup {
 		"json",
 		"yuck",
 		"toml",
-		"sxhkdrc"
+		"sxhkdrc",
+		"typescript",
+		"javascript",
+		"svelte",
+		"zig"
 	},
 
 	sync_install = true,
@@ -37,5 +41,9 @@ require("nvim-treesitter.configs").setup {
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlighting = true
+	},
+
+	autotag = {
+		enable = true
 	}
 }

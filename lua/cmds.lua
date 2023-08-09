@@ -10,7 +10,6 @@ cmd(
 	}
 )
 
-
 -- [[ Open folds when file is opened ]]
 cmd(
 	{"BufWinEnter"},

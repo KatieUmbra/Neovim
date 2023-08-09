@@ -36,7 +36,7 @@ require("lazy").setup({
 	{"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"},
 	"MunifTanjim/nui.nvim",
 	-- [[ Color Theme ]]
-	"rose-pine/neovim",
+	"navarasu/onedark.nvim",
 	-- [[ Git Status ]]
 	"lewis6991/gitsigns.nvim",
 	-- [[ Top Bar ]]
@@ -56,6 +56,8 @@ require("lazy").setup({
 	"RRethy/vim-illuminate",
 	-- [[ Auto close pairs ]]
 	"windwp/nvim-autopairs",
+	-- [[ Auto Close Tags ]]
+	"windwp/nvim-ts-autotag",
 	-- [[ Debugging ]]
 	"mfussenegger/nvim-dap",
 	"rcarriga/nvim-dap-ui",
@@ -96,16 +98,21 @@ require("lazy").setup({
 	"anuvyklack/pretty-fold.nvim",
 	-- [[ Prettier UI ]]
 	"stevearc/dressing.nvim",
-	-- [[ Indent lines ]]
-	{"lukas-reineke/indent-blankline.nvim", lazy = false},
+	-- [[ Rainbow Brackets ]]
 	"HiPhish/rainbow-delimiters.nvim",
+	-- [[ Indentation Lines ]]
+	{ "lukas-reineke/indent-blankline.nvim", lazy = false },
 
 	-- [[ Lsp Configuration Plugins ]]
 
 	-- [[ C/C++ Lsp Configuration ]]
 	"p00f/clangd_extensions.nvim",
+	-- [[ CMake Lsp Configuration ]]
+	"Civitasv/cmake-tools.nvim",
 	-- [[ Rust Lsp Configuration ]]
-	"simrat39/rust-tools.nvim"
+	"simrat39/rust-tools.nvim",
+	-- [[ Typescript Lsp Configuration ]]
+	"pmizio/typescript-tools.nvim"
 }, {})
 
 require("plugins")
