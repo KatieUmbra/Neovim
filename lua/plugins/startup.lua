@@ -1,6 +1,5 @@
 local ascii = require("ascii")
-local title = ascii.art.text.neovim.delta_corps_priest1
-
+local title = ascii.art.text.neovim.elite
 require("startup").setup {
 	-- every line should be same width without escaped \
     header = {

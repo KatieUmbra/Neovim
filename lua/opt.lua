@@ -2,7 +2,6 @@ local vim = vim
 local options = vim.opt
 
 -- [[ ColorScheme ]]
--- vim.cmd [[ colorscheme {YOUR_COLORSCHEME_HERE} ]
 vim.o.background = "dark"
 
 -- [[ Context ]]

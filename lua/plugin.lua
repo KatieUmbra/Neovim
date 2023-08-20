@@ -1,6 +1,6 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
+vim.fn.system({
     "git",
     "clone",
     "--filter=blob:none",
@@ -36,7 +36,7 @@ require("lazy").setup({
 	{"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"},
 	"MunifTanjim/nui.nvim",
 	-- [[ Color Theme ]]
-	"navarasu/onedark.nvim",
+	{ 'rose-pine/neovim', name = 'rose-pine' },
 	-- [[ Git Status ]]
 	"lewis6991/gitsigns.nvim",
 	-- [[ Top Bar ]]
@@ -102,6 +102,10 @@ require("lazy").setup({
 	"HiPhish/rainbow-delimiters.nvim",
 	-- [[ Indentation Lines ]]
 	{ "lukas-reineke/indent-blankline.nvim", lazy = false },
+	-- [[ Time ]]
+	"wakatime/vim-wakatime",
+	-- [[ Tmux Integration ]]
+	"aserowy/tmux.nvim",
 
 	-- [[ Lsp Configuration Plugins ]]
 
