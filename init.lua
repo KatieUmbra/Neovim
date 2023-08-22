@@ -1,8 +1,7 @@
 require("plugin")
-require("opt")
 require("keymap")
 require("cmds")
-
+require("opt")
 -- Syntax file
 -- Comment out
 vim.cmd([[source /home/Katie/.config/nvim/syntax/moonlight.vim]])

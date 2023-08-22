@@ -1,4 +1,3 @@
----@diagnostic disable: different-requires, undefined-global
 require("plugins.treesitter")
 require("plugins.devicons")
 require("plugins.neodev")
@@ -22,6 +21,6 @@ require("plugins.zen")
 require("plugins.folds")
 require("plugins.dressing")
 require("plugins.indent")
+require("plugins.rainbow")
 require("plugins.colorscheme")
 require("plugins.tmux")
-require("plugins.rainbow")

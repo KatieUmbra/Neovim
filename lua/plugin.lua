@@ -99,7 +99,7 @@ require("lazy").setup({
 	-- [[ Prettier UI ]]
 	"stevearc/dressing.nvim",
 	-- [[ Rainbow Brackets ]]
-	"HiPhish/rainbow-delimiters.nvim",
+	{"HiPhish/rainbow-delimiters.nvim", lazy = false},
 	-- [[ Indentation Lines ]]
 	{ "lukas-reineke/indent-blankline.nvim", lazy = false },
 	-- [[ Time ]]

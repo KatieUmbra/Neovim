@@ -10,6 +10,14 @@ cmd(
 	}
 )
 
+-- [[ Fix Colors ]]
+cmd(
+	{"BufWinEnter"},
+	{
+		command = [[ :source ~/.config/nvim/lua/plugins/rainbow.lua ]]
+	}
+)
+
 -- [[ Open folds when file is opened ]]
 cmd(
 	{"BufWinEnter"},
