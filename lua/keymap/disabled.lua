@@ -1,7 +1,7 @@
-
 local defaults = { silent = true, noremap = true }
 local function set(lhs, rhs)
 	vim.keymap.set("n", lhs, rhs, defaults)
+	vim.keymap.set("v", lhs, rhs, defaults)
 end
 
 set("<Right>", ":echoe 'Use [L]'<CR>")

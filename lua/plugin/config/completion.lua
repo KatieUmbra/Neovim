@@ -10,7 +10,7 @@ cmp.setup {
 			luasnip.lsp_expand(args.body)
 		end
 	},
-sources = {
+	sources = {
 		{name = "path"},
 		{name = "nvim_lsp" },
 		{name = "buffer" },
@@ -69,5 +69,11 @@ sources = {
 		end, {'i', 's'}),
 	},
 }
+
+cmp.setup.filetype({"dap-repl", "dapui_watches", "dapui_hover"}, {
+	sources = {
+		{name = "dap"}
+	}
+})
 
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({}))

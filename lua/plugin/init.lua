@@ -38,7 +38,22 @@ require("lazy").setup {
 		--[[ Rust Crates ]]		"Saecki/crates.nvim",
 		--[[ Typescript ]]		"pmizio/typescript-tools.nvim",
 		--[[ Json ]]			"b0o/SchemaStore.nvim",
-		--[[ C++ / C ]]			"p00f/clangd_extensions.nvim"
+		--[[ C++ / C ]]			"p00f/clangd_extensions.nvim",
+		-- ==================
+		-- 	Language Plugins
+		-- ==================
+		--[[ Eww ]]		"elkowar/yuck.vim",
+		--[[ Bspwm ]]	"kovetskiy/sxhkd-vim",
+		--[[ Kitty ]]	"fladson/vim-kitty",
+		-- ============
+		-- 	Debugging
+		-- ============
+		--[[ Adapter ]]			"mfussenegger/nvim-dap",
+		--[[ Ui ]]				"rcarriga/nvim-dap-ui",
+		--[[ Inline Hints ]]	"theHamsta/nvim-dap-virtual-text",
+		--[[ REPL Cmp ]]		"rcarriga/cmp-dap",
+		--[[ REPL Highlight ]]	"LiadOz/nvim-dap-repl-highlights",
+		--[[ Python ]]			"mfussenegger/nvim-dap-python"
 	},
 	-- options
 	{

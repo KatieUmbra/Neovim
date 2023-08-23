@@ -1,3 +1,5 @@
+require("nvim-dap-repl-highlights").setup()
+
 require("nvim-treesitter.configs").setup {
 	ensure_installed = {
 		"c",
@@ -29,7 +31,8 @@ require("nvim-treesitter.configs").setup {
 		"typescript",
 		"javascript",
 		"svelte",
-		"zig"
+		"zig",
+		"dap_repl"
 	},
 	highlight = {
 		enable = true,
