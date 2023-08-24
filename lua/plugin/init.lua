@@ -18,6 +18,10 @@ require("lazy").setup {
 		-- 	Vanity
 		-- ========
 		--[[ Rose Pine: theme ]]	"rose-pine/neovim",
+		--[[ Highlight Colors ]]	"brenoprata10/nvim-highlight-colors",
+		--[[ Indent Guides ]]		{"lukas-reineke/indent-blankline.nvim", lazy = false},
+		--[[ Delimiters ]]			"hiphish/rainbow-delimiters.nvim",
+		--[[ Discord Integration ]] "andweeb/presence.nvim",
 		-- =============
 		-- 	Completion
 		-- =============
