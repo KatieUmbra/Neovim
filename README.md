@@ -1,6 +1,8 @@
 # Katherine's minimal neovim config
 
-### My own custom neovim configuration
+<img src="https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true"/>
+
+**My custom minimal neovim configuration**
 
 ## Features
 
