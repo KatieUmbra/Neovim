@@ -30,7 +30,7 @@ Debugging support for the following languages
 - C
 - Python
 - Rust
-- zig
+- Zig
 
 ### Tmux
 
