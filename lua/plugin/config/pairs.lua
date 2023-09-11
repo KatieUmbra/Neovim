@@ -10,7 +10,7 @@ npairs.add_rule(
 	Rule(
 		"<",
 		">",
-		{"html", "svelte", "tsx", "jsx", "markdown", "xml"}
+		{"cpp", "c", "rs", "py"}
 	)
 	:with_pair(cond.not_before_regex(">"))
 )

@@ -8,6 +8,8 @@ lsp("rust")
 lsp("typescript")
 lsp("clangd")
 
+lsp("clang_tidy")
+
 ---@diagnostic disable-next-line: unused-local
 local servers = {
 	lua = "lua-language-server",
@@ -23,5 +25,6 @@ local servers = {
 	yaml = "vscode-langservers-extracted => vscode-json-language-server",
 	vimscript = { "npm", "vim-language-server" },
 	svelte = { "npm", "svelte-language-server" },
-	toml = { "npm", "@taplo/cli" }
+	tailwindcss = { "npm", "@tailwindcss/language-server" },
+	toml = { "npm", "@taplo/cli" },
 }

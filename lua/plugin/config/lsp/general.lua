@@ -70,4 +70,6 @@ lspconfig.zls.setup {}
 
 lspconfig.taplo.setup {}
 
+lspconfig.svelte.setup {}
+lspconfig.tailwindcss.setup {}
 lspconfig.cssls.setup { capabilities = capabilities }

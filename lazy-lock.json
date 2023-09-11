@@ -24,6 +24,7 @@
   "nvim-dap-ui": { "branch": "master", "commit": "85b16ac2309d85c88577cd8ee1733ce52be8227e" },
   "nvim-dap-virtual-text": { "branch": "master", "commit": "57f1dbd0458dd84a286b27768c142e1567f3ce3b" },
   "nvim-highlight-colors": { "branch": "main", "commit": "231547093a788b925b8fc36351ad422701c3a8c8" },
+  "nvim-lint": { "branch": "master", "commit": "29df35ea2ac5af0f85d8f0f40bddbd7fdaa8c492" },
   "nvim-lspconfig": { "branch": "master", "commit": "1cfb96490c3889a2c57d1ef5e1acc59e9b47c455" },
   "nvim-treesitter": { "branch": "master", "commit": "05fe2c38a3bd4f889ac13f1735685ab348d95346" },
   "nvim-ts-autotag": { "branch": "main", "commit": "6be1192965df35f94b8ea6d323354f7dc7a557e4" },
@@ -38,5 +39,6 @@
   "typescript-tools.nvim": { "branch": "master", "commit": "7f17e00ebc484c7fddbfb17044360f5d8ec08b24" },
   "vim-illuminate": { "branch": "master", "commit": "76f28e858f1caae87bfa45fb4fd09e4b053fc45b" },
   "vim-kitty": { "branch": "main", "commit": "20a2625b600f26ef8ce664c098c78ca5256695a0" },
+  "vim-wakatime": { "branch": "master", "commit": "0d2efa2daff34b27b0d227d4c3b136811c93db93" },
   "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
 }

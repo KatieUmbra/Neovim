@@ -22,6 +22,7 @@ require("lazy").setup {
 		--[[ Indent Guides ]]		{"lukas-reineke/indent-blankline.nvim", lazy = false},
 		--[[ Delimiters ]]			"hiphish/rainbow-delimiters.nvim",
 		--[[ Discord Integration ]] "andweeb/presence.nvim",
+		--[[ Coding Time ]]			"wakatime/vim-wakatime",
 		-- =============
 		-- 	Completion
 		-- =============
@@ -57,7 +58,11 @@ require("lazy").setup {
 		--[[ Inline Hints ]]	"theHamsta/nvim-dap-virtual-text",
 		--[[ REPL Cmp ]]		"rcarriga/cmp-dap",
 		--[[ REPL Highlight ]]	"LiadOz/nvim-dap-repl-highlights",
-		--[[ Python ]]			"mfussenegger/nvim-dap-python"
+		--[[ Python ]]			"mfussenegger/nvim-dap-python",
+		-- =========
+		--  Linting	
+		-- =========
+		--[[ Nvim Lint ]]	"mfussenegger/nvim-lint"
 	},
 	-- options
 	{

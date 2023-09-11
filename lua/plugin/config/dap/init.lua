@@ -10,6 +10,7 @@ end
 adapter("c_cpp")
 adapter("rust")
 adapter("python")
+adapter("zig")
 adapter("ui")
 
 fun.sign_define (

@@ -1,4 +1,5 @@
 local dap = require("dap")
+local dapui = require("dapui")
 local defaults = { noremap = true, silent = true, nowait = true }
 local function key(lhs, rhs)
 	vim.keymap.set("n", lhs, rhs, defaults)
@@ -8,6 +9,7 @@ key("<leader>ds", function() dap.continue() end)
 key("<leader>dS", function()
 	dap.repl.close()
 	dap.terminate()
+	dapui.close()
 end)
 key("<leader>dr", function()
 	dap.rep.close()

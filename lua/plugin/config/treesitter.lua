@@ -32,7 +32,8 @@ require("nvim-treesitter.configs").setup {
 		"javascript",
 		"svelte",
 		"zig",
-		"dap_repl"
+		"dap_repl",
+		"kotlin"
 	},
 	highlight = {
 		enable = true,
