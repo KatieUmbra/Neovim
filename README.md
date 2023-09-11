@@ -30,6 +30,7 @@ Debugging support for the following languages
 - C
 - Python
 - Rust
+- zig
 
 ### Tmux
 
@@ -39,4 +40,3 @@ tmux seamless integration
 
 - Missing Keymaps
 - Node debugging for Typescript
-- Zig debugging with lldb
