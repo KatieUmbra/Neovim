@@ -42,6 +42,7 @@ lspconfig.pylsp.setup{
     }
   }
 }
+lspconfig.mojo.setup {}
 lspconfig.yamlls.setup {
   settings = {
     yaml = {

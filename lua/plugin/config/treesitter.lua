@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 require("nvim-dap-repl-highlights").setup()
 
 require("nvim-treesitter.configs").setup {
@@ -33,7 +34,8 @@ require("nvim-treesitter.configs").setup {
 		"svelte",
 		"zig",
 		"dap_repl",
-		"kotlin"
+		"kotlin",
+		"bash"
 	},
 	highlight = {
 		enable = true,

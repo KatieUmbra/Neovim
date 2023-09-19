@@ -7,8 +7,10 @@ require("lazy").setup {
 		--[[ Plenary: Functions ]]	"nvim-lua/plenary.nvim",
 		--[[ Telescope: Search ]]	"nvim-telescope/telescope.nvim",
 		--[[ Lsp UI ]]				"stevearc/dressing.nvim",
+		--[[ Nui ]]					"MunifTanjim/nui.nvim",
 		--[[ Tmux Integration ]]	"aserowy/tmux.nvim",
-		--[[ Treesitter ]]			{ "nvim-treesitter/nvim-treesitter", build = function () vim.cmd(":TSUpdate") end },
+		--[[ Treesitter ]]			{ "nvim-treesitter/nvim-treesitter",
+		--[[]]						build = function () vim.cmd(":TSUpdate") end },
 		--[[ Auto Pairs ]]			"windwp/nvim-autopairs",
 		--[[ Auto Tags ]]			"windwp/nvim-ts-autotag",
 		--[[ Illuminate ]]			"RRethy/vim-illuminate",
@@ -23,6 +25,8 @@ require("lazy").setup {
 		--[[ Delimiters ]]			"hiphish/rainbow-delimiters.nvim",
 		--[[ Discord Integration ]] "andweeb/presence.nvim",
 		--[[ Coding Time ]]			"wakatime/vim-wakatime",
+		--[[ Command Line ]]		"folke/noice.nvim",
+		--[[ Notifications ]]		"rcarriga/nvim-notify",
 		-- =============
 		-- 	Completion
 		-- =============
