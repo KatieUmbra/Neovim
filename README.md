@@ -1,8 +1,8 @@
 # Katherine's minimal neovim config
 
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugin-manager?style=for-the-badge" /></a>
 
 <img src="https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true"/>
 
