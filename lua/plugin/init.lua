@@ -27,6 +27,8 @@ require("lazy").setup {
 		--[[ Coding Time ]]			"wakatime/vim-wakatime",
 		--[[ Command Line ]]		"folke/noice.nvim",
 		--[[ Notifications ]]		"rcarriga/nvim-notify",
+		--[[ Startup Screen ]]		"startup-nvim/startup.nvim",
+		--[[ Buffer File Browser ]] "stevearc/oil.nvim",
 		-- =============
 		-- 	Completion
 		-- =============

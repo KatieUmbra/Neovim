@@ -8,8 +8,6 @@ lsp("rust")
 lsp("typescript")
 lsp("clangd")
 
-lsp("clang_tidy")
-
 ---@diagnostic disable-next-line: unused-local
 local servers = {
 	lua = "lua-language-server",
