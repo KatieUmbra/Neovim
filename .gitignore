@@ -3,3 +3,4 @@
 ignored.lua
 *.vim
 /syntax
+.vscode
