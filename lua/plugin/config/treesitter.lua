@@ -34,7 +34,6 @@ require("nvim-treesitter.configs").setup {
 		"svelte",
 		"zig",
 		"dap_repl",
-		"kotlin",
 		"bash",
 		"c_sharp"
 	},

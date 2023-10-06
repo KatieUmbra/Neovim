@@ -1,0 +1,23 @@
+{
+	"default": [
+		"lua-language-server",
+		"rust-analyzer",
+		"zls",
+		"omnisharp-roslyn"
+	],
+	"cargo": [
+		"neocmakelsp"
+	],
+	"npm": [
+		"vscode-langservers-extracted",
+		"@microsoft/compose-language-service",
+		"dockerfile-language-server-nodejs",
+		"vim-language-server",
+		"svelte-language-server",
+		"@tailwindcss/language-server",
+		"@taplo/cli"
+	],
+	"pip3": [
+		"python-lsp-server"
+	]
+}

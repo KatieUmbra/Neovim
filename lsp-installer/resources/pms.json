@@ -1,0 +1,21 @@
+{
+	"scoop": {
+		"valid": true,
+		"command": "install",
+		"singleInstallPerCommand": false,
+		"overrides": [
+			{ "original": "omnisharp-roslyn", "replace": "omnisharp"}
+		],
+		"unavailable": []
+	},
+	"yay": {
+		"valid": true,
+		"command": "-S",
+		"singleInstallPerCommand": false,
+		"overrides": [],
+		"unavailable": []
+	},
+	"pacman": {
+		"valid": false
+	}
+}
