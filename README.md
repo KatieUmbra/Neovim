@@ -11,18 +11,34 @@
 ## Installation
 > Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
-Clone the repository and install the plugins:
+Clone the repository:
 
 ```sh
-git clone git@github.com:KatieUmbra/Neovim ~/.config/KatieUmbra/Neovim
-NVIM_APPNAME=KatieUmbra/Neovim/ nvim --headless +"Lazy! sync" +qa
+git clone git@github.com:KatieUmbra/Neovim ~/.config/nvim
 ```
 
-Open Neovim with this config:
+Install installer script dependencies
 
 ```sh
-NVIM_APPNAME=KatieUmbra/Neovim/ nvim
+pip3 install argparse
 ```
+
+Install language servers:
+
+```sh
+cd ~/.config/nvim/lsp-installer
+sudo python3 install-language-servers.py -p {REQUIRED: your system package manager, eg: yay, scoop, etc..}
+```
+
+Add lsp installation directores to path:
+
+```sh
+# example with cargo using zsh
+# add this to the end of your .zshrc
+export PATH="PATH:/home/{YOUR_USER_FOLDER}/.cargo/bin"
+```
+
+make sure you do the same for `pip3` `npm` `cargo` and your package manager
 
 ## Features
 
