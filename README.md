@@ -1,15 +1,15 @@
 # Katherine's minimal neovim config
 
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugin-manager?style=for-the-badge" /></a>
 
 <img src="https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true"/>
 
 **My custom minimal neovim configuration**
 
 ## Installation
-    > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+> Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
 Clone the repository and install the plugins:
 
@@ -84,6 +84,9 @@ tmux seamless integration
 
 + [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
 + [windwp/nvim-ts-autotag](https://dotfyle.com/plugins/windwp/nvim-ts-autotag)
+### file-explorer
+
++ [stevearc/oil.nvim](https://dotfyle.com/plugins/stevearc/oil.nvim)
 ### fuzzy-finder
 
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
@@ -101,6 +104,7 @@ tmux seamless integration
 ### nvim-dev
 
 + [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
++ [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 ### plugin-manager
 
@@ -108,6 +112,9 @@ tmux seamless integration
 ### snippet
 
 + [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
+### startup
+
++ [startup-nvim/startup.nvim](https://dotfyle.com/plugins/startup-nvim/startup.nvim)
 ### statusline
 
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
@@ -119,6 +126,8 @@ tmux seamless integration
 + [aserowy/tmux.nvim](https://dotfyle.com/plugins/aserowy/tmux.nvim)
 ### utility
 
++ [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
++ [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 
 ## Work in progress
