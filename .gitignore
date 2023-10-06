@@ -4,3 +4,5 @@ ignored.lua
 *.vim
 /syntax
 .vscode
+pycache
+__pycache__
