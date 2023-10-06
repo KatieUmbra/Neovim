@@ -68,6 +68,7 @@ lspconfig.vimls.setup {}
 
 lspconfig.neocmake.setup {}
 lspconfig.zls.setup {}
+lspconfig.omnisharp.setup {}
 
 lspconfig.taplo.setup {}
 

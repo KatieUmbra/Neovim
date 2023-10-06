@@ -25,4 +25,5 @@ local servers = {
 	svelte = { "npm", "svelte-language-server" },
 	tailwindcss = { "npm", "@tailwindcss/language-server" },
 	toml = { "npm", "@taplo/cli" },
+	csharp = "omnisharp-roslyn"
 }

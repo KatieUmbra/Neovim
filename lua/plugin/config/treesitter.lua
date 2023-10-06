@@ -35,7 +35,8 @@ require("nvim-treesitter.configs").setup {
 		"zig",
 		"dap_repl",
 		"kotlin",
-		"bash"
+		"bash",
+		"c_sharp"
 	},
 	highlight = {
 		enable = true,
