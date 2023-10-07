@@ -4,7 +4,8 @@
 <a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugin-manager?style=for-the-badge" /></a>
 
-<img src="https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true"/>
+![intro](https://github.com/KatieUmbra/Neovim/blob/main/intro.png?raw=true)
+![showcase](https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true)
 
 **My custom minimal neovim configuration**
 
