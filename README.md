@@ -17,12 +17,6 @@ Clone the repository:
 git clone git@github.com:KatieUmbra/Neovim ~/.config/nvim
 ```
 
-Install installer script dependencies
-
-```sh
-pip3 install argparse
-```
-
 Install language servers:
 
 available package managers: `apt-get` `yay` `scoop`
