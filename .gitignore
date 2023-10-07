@@ -6,3 +6,4 @@ ignored.lua
 .vscode
 pycache
 __pycache__
+log.txt
