@@ -39,21 +39,60 @@ with open(f"{neovimRoot}/lsp-installer/resources/lsps.json", "r") as file:
 		logging.error("Install missing dependencies before running the script again")
 		exit(1)
 
+if not isTool("sudo") and packageManager == "apt-get":
+	logging.error("You need sudo for apt-get")
+	exit(1)
+
+with open(f"{neovimRoot}/lsp-installer/log.txt", "w") as file:
+	file.close()
+
 installCommand(*lspData["default"])
 
-def install(command: list[str], packages: list[str]) -> bool:
+outputText = ""
+def install(command: list[str], packages: list[str], fallback: callable = None) -> bool:
 	try:
 		cmd = " ".join([*command, *packages])
 		logging.info("Running '\033[38;5;8m%s\033[0m'", cmd)
 		subprocess.run(cmd, shell=True, check=True, capture_output=True)
+		logging.info("\033[38;5;51m%s\033[0m packages \033[38;5;40minstalled successfully\033[0m", command[0])
+		return True
 	except(subprocess.CalledProcessError):
-		logging.error("Error installing \033[38;5;8m%s\033[0m packages", command[0])
-		return False
-	logging.info("%s packages \033[38;5;40minstalled succesfully\033[0m", command[0])
+		cmd = " ".join(["sudo", *command, *packages])
+		logging.error("Error installing \033[38;5;8m%s\033[0m packages, trying again with sudo", command[0])
+		logging.warning("Introduce your sudo password if necessary:")
+		logging.info("Running '\033[38;5;8m%s\033[0m'", cmd)
+		output = subprocess.run(cmd, shell=True, capture_output=True, text=True, stdin=subprocess.PIPE)
+		outputText = output.stdout
+		if output.returncode != 0:
+			logging.error("Error installing \033[38;5;8m%s\033[0m packages, running fallback", command[0])
+			if fallback is not None:
+				if not fallback():
+					logging.error("Error installing \033[38;5;8m%s\033[0m packages", command[0])
+					logging.info("Writing log file as 'log.txt'")
+					with open(f"{neovimRoot}/lsp-installer/log.txt", "a") as file:
+						file.write(f"{command[0]} log:" + outputText + "\n")
+					return False
+				else:
+					logging.info("\033[38;5;51m%s\033[0m packages \033[38;5;40minstalled successfully\033[0m", command[0])
+					return True
+
+	logging.info("\033[38;5;51m%s\033[0m packages \033[38;5;40minstalled successfully\033[0m", command[0])
 	return True
 
-install(["npm", "i", "-g"], lspData["npm"])
+def pip3Fallback() -> bool:
+	if (packageManager != "yay"):
+		return False
+	packages = []
+	for i in lspData["pip3"]:
+		if (i.startswith("python")):
+			packages.append(i)
+		else:
+			packages.append("python-" + i)
+	installCommand(*packages)
+	return True
+
+install(["npm", "i"], lspData["npm"])
 install(["cargo", "install"], lspData["cargo"])
-install(["pip3", "install"], lspData["pip3"])
+install(["pip3", "install"], lspData["pip3"], fallback=pip3Fallback)
 
 logging.warning("Make sure the binaries are in your path")

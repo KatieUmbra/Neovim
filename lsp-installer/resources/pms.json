@@ -1,19 +1,43 @@
 {
 	"scoop": {
+		"cmd": "scoop",
 		"valid": true,
 		"command": "install",
 		"singleInstallPerCommand": false,
 		"overrides": [
 			{ "original": "omnisharp-roslyn", "replace": "omnisharp"}
 		],
-		"unavailable": []
+		"unavailable": [],
+		"hideOutput": true,
+		"setupCmds": []
 	},
 	"yay": {
+		"cmd": "yay",
 		"valid": true,
-		"command": "-S",
+		"command": "-S --noconfirm",
 		"singleInstallPerCommand": false,
 		"overrides": [],
-		"unavailable": []
+		"unavailable": [],
+		"hideOutput": false,
+		"setupCmds": []
+	},
+	"apt-get":{
+		"cmd": "sudo apt-get",
+		"valid": true,
+		"command": "-y install",
+		"singleInstallPerCommand": false,
+		"overrides": [],
+		"unavailable": [],
+		"hideOutput": false
+	},
+	"apt":{
+		"cmd": "sudo apt-get",
+		"valid": true,
+		"command": "-y install",
+		"singleInstallPerCommand": false,
+		"overrides": [],
+		"unavailable": [],
+		"hideOutput": false
 	},
 	"pacman": {
 		"valid": false

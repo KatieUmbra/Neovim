@@ -1,0 +1,33 @@
+yay log:Sync Explicit (3): zls-0.11.0-1, lua-language-server-3.7.0-1, rust-analyzer-20231002-1
+AUR Explicit (1): omnisharp-roslyn-1.39.8-1
+:: [1mPKGBUILD up to date, skipping download: omnisharp-roslyn[0m
+  1 omnisharp-roslyn                         (Installed) (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+  1 omnisharp-roslyn                         (Installed) (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+==> Making package: omnisharp-roslyn 1.39.8-1 (Sat Oct  7 14:48:38 2023)
+==> Retrieving sources...
+  -> Found v1.39.8.tar.gz
+==> Validating source files with sha256sums...
+:: [1m(1/1) Parsing SRCINFO: omnisharp-roslyn[0m
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (4) zig-0.11.0-1  lua-language-server-3.7.0-1  rust-analyzer-20231002-1  zls-0.11.0-1
+
+Total Installed Size:  182.76 MiB
+Net Upgrade Size:      142.59 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+zig: /usr/bin/zig exists in filesystem
+zls: /usr/bin/zls exists in filesystem
+Errors occurred, no packages were upgraded.
+
