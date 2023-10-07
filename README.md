@@ -25,6 +25,7 @@ pip3 install argparse
 
 Install language servers:
 
+available package managers: `apt-get` `yay` `scoop`
 ```sh
 cd ~/.config/nvim/lsp-installer
 sudo python3 install-language-servers.py -p {REQUIRED: your system package manager, eg: yay, scoop, etc..}
