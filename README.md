@@ -54,6 +54,7 @@ Lsp support for the following languages
 - Vimscript
 - Svelte
 - Toml
+- C#
 
 ### Dap
 
@@ -145,6 +146,7 @@ tmux seamless integration
 
 - Missing Keymaps
 - Node debugging for Typescript
+- Godot Integration
 
 ## Acknowledgements
 
