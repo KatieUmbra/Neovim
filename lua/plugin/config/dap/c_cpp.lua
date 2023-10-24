@@ -6,13 +6,8 @@ dap.configurations.cpp = {
 		type = "codelldb",
 		request = "launch",
 		program = function()
-			local command = "find ! -type d -path './build/bin/*' | grep -v 'Test' | sed 's#.*/##'"
-			local bin_location = io.popen(command, "r")
-			if (bin_location ~= nil) then
-				return "build/bin/"..bin_location:read("*a"):gsub("[\n\r]", "")
-			else
-				return ""
-			end
+			local command = vim.fn.input("Binary name (./build/?): ")
+			return 'build/'..command
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,

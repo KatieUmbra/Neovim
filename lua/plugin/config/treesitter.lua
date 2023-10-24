@@ -35,14 +35,12 @@ require("nvim-treesitter.configs").setup {
 		"zig",
 		"dap_repl",
 		"bash",
-		"c_sharp"
+		"c_sharp",
+		"glsl"
 	},
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlighting = true
-	},
-	indent = {
-		enable = true
 	},
 	autotag = {
 		enable = true

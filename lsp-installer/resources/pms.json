@@ -22,22 +22,10 @@
 		"setupCmds": []
 	},
 	"apt-get":{
-		"cmd": "sudo apt-get",
-		"valid": true,
-		"command": "-y install",
-		"singleInstallPerCommand": false,
-		"overrides": [],
-		"unavailable": [],
-		"hideOutput": false
+		"valid": false
 	},
 	"apt":{
-		"cmd": "sudo apt-get",
-		"valid": true,
-		"command": "-y install",
-		"singleInstallPerCommand": false,
-		"overrides": [],
-		"unavailable": [],
-		"hideOutput": false
+		"valid": false
 	},
 	"pacman": {
 		"valid": false

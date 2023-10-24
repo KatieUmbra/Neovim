@@ -16,6 +16,7 @@ require("lazy").setup {
 		--[[ Illuminate ]]			"RRethy/vim-illuminate",
 		--[[ Status Line ]]			"nvim-lualine/lualine.nvim",
 		--[[ Dev Icons ]]			"nvim-tree/nvim-web-devicons",
+		--[[ Formatting ]]			"mhartington/formatter.nvim",
 		-- ========
 		-- 	Vanity
 		-- ========
@@ -26,7 +27,6 @@ require("lazy").setup {
 		--[[ Discord Integration ]] "andweeb/presence.nvim",
 		--[[ Coding Time ]]			"wakatime/vim-wakatime",
 		--[[ Command Line ]]		"folke/noice.nvim",
-		--[[ Notifications ]]		"rcarriga/nvim-notify",
 		--[[ Startup Screen ]]		"startup-nvim/startup.nvim",
 		--[[ Buffer File Browser ]] "stevearc/oil.nvim",
 		-- =============

@@ -3,7 +3,8 @@
 		"lua-language-server",
 		"rust-analyzer",
 		"zls",
-		"omnisharp-roslyn"
+		"csharp-ls",
+		"glsl_analyzer"
 	],
 	"cargo": [
 		"neocmakelsp"

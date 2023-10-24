@@ -3,7 +3,6 @@ local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local luasnip = require('luasnip')
 local selectOptions = { behavior = cmp.SelectBehavior.Select }
 require("luasnip.loaders.from_vscode").lazy_load()
-
 cmp.setup {
 	snippet = {
 		expand = function(args)

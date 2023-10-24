@@ -1,27 +1,26 @@
-local function setColor(number, value)
-	vim.cmd ([[highlight IndentBlanklineIndent]]..number..[[ guifg=#]]..value..[[ gui=nocombine]])
+local function setColor(name, color)
+	vim.api.nvim_set_hl(0, "Rainbow"..name, { fg = "#"..string.upper(color) })
 end
 
-for _, v in pairs(require("options.color").rosepineColors) do
-	setColor(v.id, v.color)
-end
+local hooks = require("ibl.hooks")
 
-local options = vim.opt
+hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+	for n, v in pairs(require("options.color").rosepineColors) do
+		setColor(n, v.color)
+	end
+end)
 
-options.list = true
-options.listchars:append "space:⋅"
-options.listchars:append "eol:↴"
-options.listchars:append "tab:⋅⋅"
+local highlight = {
+	"RainbowRed",
+	"RainbowYellow",
+	"RainbowBlue",
+	"RainbowOrange",
+	"RainbowGreen",
+	"RainbowViolet",
+	"RainbowCyan",
+}
 
-require("indent_blankline").setup {
-	space_char_blankline = " ",
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        "IndentBlanklineIndent6",
-		"IndentBlanklineIndent7"
-    },
+require("ibl").setup {
+	indent = { highlight = highlight },
+	scope = { highlight = highlight }
 }

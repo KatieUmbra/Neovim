@@ -42,7 +42,9 @@ lspconfig.pylsp.setup{
     }
   }
 }
-lspconfig.mojo.setup {}
+lspconfig.mojo.setup {
+	filetypes = { "mojo", "🔥" }
+}
 lspconfig.yamlls.setup {
   settings = {
     yaml = {
@@ -68,7 +70,8 @@ lspconfig.vimls.setup {}
 
 lspconfig.neocmake.setup {}
 lspconfig.zls.setup {}
-lspconfig.omnisharp.setup {}
+lspconfig.csharp_ls.setup {}
+lspconfig.glsl_analyzer.setup {}
 
 lspconfig.taplo.setup {}
 
