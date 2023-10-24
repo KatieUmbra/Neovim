@@ -91,7 +91,7 @@ def pip3Fallback() -> bool:
 	installCommand(*packages)
 	return True
 
-install(["npm", "i"], lspData["npm"])
+install(["npm", "i", "-g"], lspData["npm"])
 install(["cargo", "install"], lspData["cargo"])
 install(["pip3", "install"], lspData["pip3"], fallback=pip3Fallback)
 

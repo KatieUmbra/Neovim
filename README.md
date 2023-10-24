@@ -56,6 +56,7 @@ Lsp support for the following languages
 - Svelte
 - Toml
 - C#
+- GLSL
 
 ### Dap
 
