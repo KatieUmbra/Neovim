@@ -1,18 +1,17 @@
 vim.g.rainbow_delimiters = {
 	highlight = {
-		'RainbowDelimiterRed',
-        'RainbowDelimiterYellow',
-        'RainbowDelimiterBlue',
-        'RainbowDelimiterOrange',
-        'RainbowDelimiterGreen',
-        'RainbowDelimiterViolet',
-        'RainbowDelimiterCyan'
-	}
+		"RainbowDelimiterRed",
+		"RainbowDelimiterYellow",
+		"RainbowDelimiterBlue",
+		"RainbowDelimiterOrange",
+		"RainbowDelimiterGreen",
+		"RainbowDelimiterViolet",
+		"RainbowDelimiterCyan",
+	},
 }
 
-
 local function setColor(rdColor, themeColor)
-	local cmd = [[:silent! highlight RainbowDelimiter]]..rdColor..[[ guifg=#]]..themeColor
+	local cmd = [[:silent! highlight RainbowDelimiter]] .. rdColor .. [[ guifg=#]] .. themeColor
 	vim.cmd(cmd)
 end
 

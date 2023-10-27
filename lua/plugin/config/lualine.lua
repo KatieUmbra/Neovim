@@ -8,15 +8,15 @@ for _, mode in ipairs(modes) do
 	custom_rose_pine[mode].b.bg = color_bg_light
 end
 
-require("lualine").setup {
+require("lualine").setup({
 	options = {
 		theme = custom_rose_pine,
-		section_separators = { left = '', right = '' },
-		component_separators = { left = '', right = '' },
+		section_separators = { left = "", right = "" },
+		component_separators = { left = "", right = "" },
 		disabled_filetypes = {
 			startup = {},
 			oil = {},
-			TelescopePrompt = {}
-		}
-	}
-}
+			TelescopePrompt = {},
+		},
+	},
+})

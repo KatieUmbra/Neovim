@@ -1,5 +1,5 @@
 local function lsp(name)
-	return require("plugin.config.lsp."..name)
+	return require("plugin.config.lsp." .. name)
 end
 
 lsp("neodev")
@@ -25,5 +25,5 @@ local servers = {
 	svelte = { "npm", "svelte-language-server" },
 	tailwindcss = { "npm", "@tailwindcss/language-server" },
 	toml = { "npm", "@taplo/cli" },
-	csharp = "omnisharp-roslyn"
+	csharp = "omnisharp-roslyn",
 }

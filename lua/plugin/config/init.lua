@@ -1,5 +1,5 @@
 local function config(module)
-	return require("plugin.config."..module)
+	return require("plugin.config." .. module)
 end
 
 config("general")

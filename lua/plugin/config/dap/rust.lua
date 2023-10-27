@@ -18,6 +18,6 @@ dap.configurations.rust = {
 			return argv
 		end,
 		cwd = "${workspaceFolder}",
-		stopOnEntry = false
-	}
+		stopOnEntry = false,
+	},
 }

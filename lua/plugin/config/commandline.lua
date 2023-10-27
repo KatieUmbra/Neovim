@@ -1,13 +1,13 @@
-require("noice").setup {
+require("noice").setup({
 	cmdline = {
 		enabled = true,
-		view = "cmdline"
+		view = "cmdline",
 	},
 	popupmenu = {
 		enabled = true,
-		backend = "nui"
+		backend = "nui",
 	},
 	notify = {
-		enabled = true
-	}
-}
+		enabled = true,
+	},
+})

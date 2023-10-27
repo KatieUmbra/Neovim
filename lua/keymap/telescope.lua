@@ -4,7 +4,8 @@ local function set(lhs, rhs)
 	vim.keymap.set("n", lhs, rhs, defaults)
 end
 
-set("<leader>ff", builtin.find_files)
+set("<leader>fa", builtin.find_files)
+set("<leader>ff", builtin.git_files)
 set("<leader>fg", builtin.live_grep)
 set("<leader>fb", builtin.buffers)
 set("<leader>fh", builtin.help_tags)

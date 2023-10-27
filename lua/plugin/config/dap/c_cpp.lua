@@ -7,19 +7,19 @@ dap.configurations.cpp = {
 		request = "launch",
 		program = function()
 			local command = vim.fn.input("Binary name (./build/?): ")
-			return 'build/'..command
+			return "build/" .. command
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,
-		args = function ()
+		args = function()
 			local argv = {}
 			arg = vim.fn.input(string.format("Arguments: "))
-            for a in string.gmatch(arg, "%S+") do
-                table.insert(argv, a)
-            end
-            vim.cmd('echo ""')
-            return argv
-		end
+			for a in string.gmatch(arg, "%S+") do
+				table.insert(argv, a)
+			end
+			vim.cmd('echo ""')
+			return argv
+		end,
 	},
 	{
 		name = "C++/C Tests with CMake",
@@ -28,15 +28,15 @@ dap.configurations.cpp = {
 		program = "build/bin/Test",
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,
-		args = function ()
+		args = function()
 			local argv = {}
 			arg = vim.fn.input(string.format("Arguments: "))
-            for a in string.gmatch(arg, "%S+") do
-                table.insert(argv, a)
-            end
-            vim.cmd('echo ""')
-            return argv
-		end
+			for a in string.gmatch(arg, "%S+") do
+				table.insert(argv, a)
+			end
+			vim.cmd('echo ""')
+			return argv
+		end,
 	},
 	{
 		name = "C++/C File",
@@ -55,16 +55,16 @@ dap.configurations.cpp = {
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,
-		args = function ()
+		args = function()
 			local argv = {}
 			arg = vim.fn.input(string.format("Arguments: "))
-            for a in string.gmatch(arg, "%S+") do
-                table.insert(argv, a)
-            end
-            vim.cmd('echo ""')
-            return argv
-		end
-	}
+			for a in string.gmatch(arg, "%S+") do
+				table.insert(argv, a)
+			end
+			vim.cmd('echo ""')
+			return argv
+		end,
+	},
 }
 
 dap.configurations.c = dap.configurations.cpp

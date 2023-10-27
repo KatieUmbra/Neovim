@@ -1,7 +1,7 @@
 ---@diagnostic disable: missing-fields
 require("nvim-dap-repl-highlights").setup()
 
-require("nvim-treesitter.configs").setup {
+require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"c",
 		"cpp",
@@ -36,14 +36,14 @@ require("nvim-treesitter.configs").setup {
 		"dap_repl",
 		"bash",
 		"c_sharp",
-		"glsl"
+		"glsl",
 	},
 	highlight = {
 		enable = true,
-		additional_vim_regex_highlighting = true
+		additional_vim_regex_highlighting = true,
 	},
 	autotag = {
-		enable = true
+		enable = true,
 	},
-	sync_install = true
-}
+	sync_install = true,
+})

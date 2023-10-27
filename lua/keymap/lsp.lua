@@ -6,10 +6,18 @@ end
 
 local themes = require("options.telescope_theme").themes
 
-set("<leader>ad", function() builtin.diagnostics(themes.ivy) end)
-set("<leader>aa", function() vim.lsp.buf.code_action() end)
-set("<leader>ar", function() vim.lsp.buf.rename() end)
-set("<leader>ah", function() vim.lsp.buf.hover() end)
+set("<leader>ad", function()
+	builtin.diagnostics(themes.ivy)
+end)
+set("<leader>aa", function()
+	vim.lsp.buf.code_action()
+end)
+set("<leader>ar", function()
+	vim.lsp.buf.rename()
+end)
+set("<leader>ah", function()
+	vim.lsp.buf.hover()
+end)
 set("<leader>aD", builtin.lsp_definitions)
 set("<leader>ai", builtin.lsp_implementations)
 set("<leader>at", builtin.lsp_type_definitions)

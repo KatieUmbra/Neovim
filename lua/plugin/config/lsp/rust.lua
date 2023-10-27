@@ -1,3 +1,3 @@
-require("rust-tools").setup {}
+require("rust-tools").setup({})
 
-require("crates").setup {}
+require("crates").setup({})

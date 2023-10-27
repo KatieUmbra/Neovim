@@ -1,5 +1,5 @@
 local function setColor(name, color)
-	vim.api.nvim_set_hl(0, "Rainbow"..name, { fg = "#"..string.upper(color) })
+	vim.api.nvim_set_hl(0, "Rainbow" .. name, { fg = "#" .. string.upper(color) })
 end
 
 local hooks = require("ibl.hooks")
@@ -20,7 +20,7 @@ local highlight = {
 	"RainbowCyan",
 }
 
-require("ibl").setup {
+require("ibl").setup({
 	indent = { highlight = highlight },
-	scope = { highlight = highlight }
-}
+	scope = { highlight = highlight },
+})

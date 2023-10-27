@@ -1,5 +1,5 @@
-require("illuminate").configure {
+require("illuminate").configure({
 	providers = {
-		"lsp"
-	}
-}
+		"lsp",
+	},
+})
