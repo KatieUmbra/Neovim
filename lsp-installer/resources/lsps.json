@@ -3,7 +3,6 @@
 		"lua-language-server",
 		"rust-analyzer",
 		"zls",
-		"csharp-ls",
 		"glsl_analyzer"
 	],
 	"cargo": [

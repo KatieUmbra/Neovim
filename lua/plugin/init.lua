@@ -26,6 +26,8 @@ require("lazy").setup({
 		"windwp/nvim-autopairs",
 		--[[ Auto Tags ]]
 		"windwp/nvim-ts-autotag",
+		--[[ Surround ]]
+		{ "echasnovski/mini.surround", version = false },
 		--[[ Illuminate ]]
 		"RRethy/vim-illuminate",
 		--[[ Status Line ]]
@@ -37,8 +39,16 @@ require("lazy").setup({
 		-- ========
 		-- 	Vanity
 		-- ========
+		-- [[ COLORSCHEMES ]]
+
 		--[[ Rose Pine: theme ]]
 		"rose-pine/neovim",
+		--[[ Nightfox: theme ]]
+		"EdenEast/nightfox.nvim",
+		--[[ One Dark: theme ]]
+		"navarasu/onedark.nvim",
+
+		-- [[ OTHER ]]
 		--[[ Highlight Colors ]]
 		"brenoprata10/nvim-highlight-colors",
 		--[[ Indent Guides ]]
@@ -68,12 +78,10 @@ require("lazy").setup({
 		"hrsh7th/cmp-cmdline",
 		--[[ Cmp ]]
 		"hrsh7th/nvim-cmp",
-		--[[ Lua Snip ]]
-		"L3MON4D3/LuaSnip",
-		--[[ Cmp Lua Snip ]]
-		"saadparwaiz1/cmp_luasnip",
-		--[[ Friendly Snippets ]]
-		"rafamadriz/friendly-snippets",
+		--[[ Snippet Engine ]]
+		"SirVer/ultisnips",
+		--[[ Snippet Cmp Integration ]]
+		"quangnguyen30192/cmp-nvim-ultisnips",
 		-- ==================
 		-- 	Language Servers
 		-- ==================

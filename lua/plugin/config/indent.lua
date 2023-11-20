@@ -5,7 +5,7 @@ end
 local hooks = require("ibl.hooks")
 
 hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-	for n, v in pairs(require("options.color").rosepineColors) do
+	for n, v in pairs(require("options.color").colors) do
 		setColor(n, v.color)
 	end
 end)

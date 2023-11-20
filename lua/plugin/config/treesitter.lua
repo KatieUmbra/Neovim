@@ -35,7 +35,6 @@ require("nvim-treesitter.configs").setup({
 		"zig",
 		"dap_repl",
 		"bash",
-		"c_sharp",
 		"glsl",
 	},
 	highlight = {

@@ -10,4 +10,16 @@ M.rosepineColors = {
 	["Cyan"] = { color = "3e8fb0", id = 7 },
 }
 
+M.carbonfoxColors = {
+	["Red"] = { color = "ee5396", id = 1 },
+	["Yellow"] = { color = "08bdba", id = 2 },
+	["Blue"] = { color = "78a9ff", id = 3 },
+	["Orange"] = { color = "3ddbd9", id = 4 },
+	["Green"] = { color = "25be6a", id = 5 },
+	["Violet"] = { color = "be95ff", id = 6 },
+	["Cyan"] = { color = "33b1ff", id = 7 },
+}
+
+M.colors = M.rosepineColors
+
 return M

@@ -1,28 +1,31 @@
+---@diagnostic disable: missing-fields
+--
 local cmp = require("cmp")
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-local luasnip = require("luasnip")
+local cmp_nvim_ultisnips = require("cmp_nvim_ultisnips")
 local selectOptions = { behavior = cmp.SelectBehavior.Select }
-require("luasnip.loaders.from_vscode").lazy_load()
+
+cmp_nvim_ultisnips.setup({})
+local cmp_ultisnips_mappings = require("cmp_nvim_ultisnips.mappings")
+
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			luasnip.lsp_expand(args.body)
+			vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
 	sources = {
 		{ name = "path" },
 		{ name = "nvim_lsp" },
 		{ name = "buffer" },
-		{ name = "luasnip" },
 		{ name = "crates" },
-		{ name = "" },
+		{ name = "ultisnips" },
 	},
 	formatting = {
 		fields = { "menu", "abbr", "kind" },
 		format = function(entry, item)
 			local menu_icon = {
 				nvim_lsp = "󰊕",
-				luasnip = "",
 				buffer = "",
 				path = "",
 			}
@@ -55,15 +58,10 @@ cmp.setup({
 		["<C-e>"] = cmp.mapping.abort(),
 		["<C-y>"] = cmp.mapping.confirm({ select = true }),
 		["<Tab>"] = cmp.mapping(function(fallback)
-			local col = vim.fn.col(".") - 1
-
-			if cmp.visible() then
-				cmp.select_next_item(selectOptions)
-			elseif col == 0 or vim.fn.getline("."):sub(col, col):match("%s") then
-				fallback()
-			else
-				cmp.complete()
-			end
+			cmp_ultisnips_mappings.expand_or_jump_forwards(fallback)
+		end, { "i", "s" }),
+		["<S-Tab>"] = cmp.mapping(function(fallback)
+			cmp_ultisnips_mappings.jump_backwards(fallback)
 		end, { "i", "s" }),
 	},
 })

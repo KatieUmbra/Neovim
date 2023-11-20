@@ -1,4 +1,11 @@
 require("clangd_extensions").setup({
+	inlay_hints = {
+		inline = vim.fn.has("nvim-0.10") == 1,
+		only_current_line = false,
+		show_parameter_hints = true,
+		parameter_hints_prefix = "<- ",
+		other_hints_prefix = "-> ",
+	},
 	server = {
 		cmd = {
 			"clangd",

@@ -1,9 +1,7 @@
-require("luasnip.loaders.from_vscode").lazy_load()
 local lspconfig = require("lspconfig")
 local configurations = require("lspconfig.configs")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lsp_defaults = lspconfig.util.default_config
 lsp_defaults.capabilities =
@@ -66,8 +64,11 @@ lspconfig.dockerls.setup({})
 lspconfig.vimls.setup({})
 
 lspconfig.neocmake.setup({})
-lspconfig.zls.setup({})
-lspconfig.csharp_ls.setup({})
+lspconfig.zls.setup({
+	on_attach = function(_, bufnr)
+		vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+	end,
+})
 lspconfig.glsl_analyzer.setup({})
 
 lspconfig.taplo.setup({})
