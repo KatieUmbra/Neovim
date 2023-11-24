@@ -8,8 +8,11 @@ require("formatter").setup({
 			require("formatter.filetypes.cpp").clangformat,
 		},
 		lua = {
-			require("formatter.filetypes.lua").stylua
-		}
+			require("formatter.filetypes.lua").stylua,
+		},
+		rust = {
+			require("formatter.filetypes.rust").rustfmt,
+		},
 	},
 	["*"] = {
 		require("formatter.filetypes.any").remove_trailing_whitespace,
