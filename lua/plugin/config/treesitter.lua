@@ -36,6 +36,7 @@ require("nvim-treesitter.configs").setup({
 		"dap_repl",
 		"bash",
 		"glsl",
+		"haskell",
 	},
 	highlight = {
 		enable = true,

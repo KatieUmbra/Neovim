@@ -20,7 +20,7 @@ git clone git@github.com:KatieUmbra/Neovim ~/.config/nvim
 
 Install language servers:
 
-available package managers: `apt-get` `yay` `scoop`
+available package managers: `yay` `scoop`
 ```sh
 cd ~/.config/nvim/lsp-installer
 python3 install-language-servers.py -p {REQUIRED: your system package manager, eg: yay, scoop, etc..}
@@ -36,6 +36,48 @@ export PATH="PATH:/home/{YOUR_USER_FOLDER}/.cargo/bin"
 
 make sure you do the same for `pip3` `npm` `cargo` and your package manager
 
+## Configuration
+
+the config settings file resides in `lua/settings.lua`
+
+### Language Servers
+
+all language servers in the array `M.language_servers` will be enabled, those not present will be disabled.
+
+the available languages must be added with these names.
+
+| name           | package manager | package name                       |
+|----------------|-----------------|------------------------------------|
+| lua            | default         | lua-language-server                |
+| rust           | default         | rust-analyzer                      |
+| glsl           | default         | glsl_analyzer                      |
+| c              | default         | clangd                             |
+| cmake          | cargo           | neocmakelsp                        |
+| yaml           | npm             | vscode-langservers-extracted       |
+| json           | npm             | vscode-langservers-extracted       |
+| docker compose | npm             | @microsoft/compose-language-server |
+| docker         | npm             | dockerfile-language-server-nodejs  |
+| vim            | npm             | vim-language-server                |
+| svelte         | npm             | svelte-language-server             |
+| tailwind       | npm             | @tailwindcss/language-server       |
+| toml           | npm             | @taplo/cli                         |
+| python         | pip             | python-lsp-server                  |
+
+```lua
+M.language_servers = {
+    "rust"
+    ...
+}
+```
+
+### Colorscheme
+
+currently there are only two colorschemes available, `rosepine` and `carbonfox`
+
+```lua
+M.colorscheme = "rosepine"
+```
+
 ## Features
 
 ### Lsp
@@ -47,7 +89,6 @@ Lsp support for the following languages
 - Typescript
 - Json
 - Yaml
-- Zig
 - CMake
 - Css
 - Docker
@@ -55,7 +96,6 @@ Lsp support for the following languages
 - Vimscript
 - Svelte
 - Toml
-- C#
 - GLSL
 
 ### Dap
@@ -66,7 +106,6 @@ Debugging support for the following languages
 - C
 - Python
 - Rust
-- Zig
 
 ### Tmux
 
@@ -149,6 +188,9 @@ tmux seamless integration
 - Missing Keymaps
 - Node debugging for Typescript
 - Godot Integration
+- OneDark colorscheme support
+- Brew support
+- cmake debugging support
 
 ## Acknowledgements
 

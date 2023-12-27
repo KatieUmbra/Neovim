@@ -10,9 +10,8 @@ end
 adapter("c_cpp")
 adapter("rust")
 adapter("python")
-adapter("zig")
 adapter("ui")
--- Cmake appears to be broken
+-- cmake appears to be broken
 -- adapter("cmake")
 
 fun.sign_define("DapBreakpoint", {

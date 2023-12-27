@@ -2,8 +2,8 @@
 	"default": [
 		"lua-language-server",
 		"rust-analyzer",
-		"zls",
-		"glsl_analyzer"
+		"glsl_analyzer",
+		"clangd"
 	],
 	"cargo": [
 		"neocmakelsp"

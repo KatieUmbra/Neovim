@@ -7,12 +7,11 @@ if not vim.loop.fs_stat(lazyPath) then
 		"--filter=blob:none",
 		"https://github.com/folke/lazy.nvim.git",
 		"--branch=stable",
-		lazyPath
+		lazyPath,
 	})
 end
 
 vim.opt.rtp:prepend(lazyPath)
-
 
 require("plugin")
 require("options")

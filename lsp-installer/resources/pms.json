@@ -4,9 +4,7 @@
 		"valid": true,
 		"command": "install",
 		"singleInstallPerCommand": false,
-		"overrides": [
-			{ "original": "omnisharp-roslyn", "replace": "omnisharp"}
-		],
+		"overrides": [],
 		"unavailable": [],
 		"hideOutput": true,
 		"setupCmds": []

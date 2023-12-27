@@ -57,14 +57,4 @@ function M.is_template()
 	vim.lsp.handlers["textDocument/signatureHelp"] = old_handler
 end
 
-function M.struct_class_semicolon()
-	local line = vim.api.nvim_get_current_line()
-	-- match for() while() functions()
-	local pattern = "\\m^.*(.*)"
-
-	if vim.fn.match(line, pattern) ~= -1 or vim.fn.match(line, "namespace") ~= -1 then
-		return false
-	end
-end
-
 return M

@@ -20,6 +20,7 @@ M.carbonfoxColors = {
 	["Cyan"] = { color = "33b1ff", id = 7 },
 }
 
-M.colors = M.rosepineColors
+local settings = require("settings")
+M.colors = M[settings.colorscheme .. "Colors"]
 
 return M

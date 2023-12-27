@@ -1,4 +1,4 @@
-require("clangd_extensions").setup({
+return {
 	inlay_hints = {
 		inline = vim.fn.has("nvim-0.10") == 1,
 		only_current_line = false,
@@ -38,4 +38,4 @@ require("clangd_extensions").setup({
 			border = "rounded",
 		},
 	},
-})
+}
