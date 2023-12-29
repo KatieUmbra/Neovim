@@ -113,12 +113,17 @@ tmux seamless integration
 
 ## Plugins
 
+### code-runner
+
++ [Civitasv/cmake-tools.nvim](https://dotfyle.com/plugins/Civitasv/cmake-tools.nvim)
 ### color
 
 + [brenoprata10/nvim-highlight-colors](https://dotfyle.com/plugins/brenoprata10/nvim-highlight-colors)
 ### colorscheme
 
 + [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
++ [navarasu/onedark.nvim](https://dotfyle.com/plugins/navarasu/onedark.nvim)
++ [EdenEast/nightfox.nvim](https://dotfyle.com/plugins/EdenEast/nightfox.nvim)
 ### completion
 
 + [simrat39/rust-tools.nvim](https://dotfyle.com/plugins/simrat39/rust-tools.nvim)
@@ -128,6 +133,7 @@ tmux seamless integration
 + [RRethy/vim-illuminate](https://dotfyle.com/plugins/RRethy/vim-illuminate)
 ### debugging
 
++ [theHamsta/nvim-dap-virtual-text](https://dotfyle.com/plugins/theHamsta/nvim-dap-virtual-text)
 + [rcarriga/nvim-dap-ui](https://dotfyle.com/plugins/rcarriga/nvim-dap-ui)
 + [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
 ### dependency-management
@@ -140,6 +146,9 @@ tmux seamless integration
 ### file-explorer
 
 + [stevearc/oil.nvim](https://dotfyle.com/plugins/stevearc/oil.nvim)
+### formatting
+
++ [mhartington/formatter.nvim](https://dotfyle.com/plugins/mhartington/formatter.nvim)
 ### fuzzy-finder
 
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
@@ -162,9 +171,6 @@ tmux seamless integration
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
-### snippet
-
-+ [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 ### startup
 
 + [startup-nvim/startup.nvim](https://dotfyle.com/plugins/startup-nvim/startup.nvim)
@@ -173,6 +179,7 @@ tmux seamless integration
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 ### syntax
 
++ [echasnovski/mini.surround](https://dotfyle.com/plugins/echasnovski/mini.surround)
 + [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 ### tmux
 
@@ -180,14 +187,12 @@ tmux seamless integration
 ### utility
 
 + [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
-+ [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 
 ## Work in progress
 
 - Missing Keymaps
 - Node debugging for Typescript
-- Godot Integration
 - OneDark colorscheme support
 - Brew support
 - cmake debugging support
