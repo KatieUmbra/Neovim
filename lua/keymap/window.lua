@@ -3,8 +3,6 @@ local function set(lhs, rhs)
 	vim.keymap.set("n", lhs, rhs, defaults)
 end
 
-vim.opt.clipboard = "unnamedplus"
-
 set("<leader>dd", function()
 	vim.api.nvim_del_current_line()
 end)

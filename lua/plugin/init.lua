@@ -113,6 +113,8 @@ require("lazy").setup({
 		-- ============
 		--[[ Adapter ]]
 		"mfussenegger/nvim-dap",
+		-- [[ Dap Dependency ]]
+		"nvim-neotest/nvim-nio",
 		--[[ Ui ]]
 		"rcarriga/nvim-dap-ui",
 		--[[ Inline Hints ]]
