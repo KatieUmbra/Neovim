@@ -1,3 +1,5 @@
+<div align="center">
+
 # Katherine's minimal neovim config
 
 <a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=for-the-badge" /></a>
@@ -8,6 +10,8 @@
 ![showcase](https://github.com/KatieUmbra/Neovim/blob/main/showcase.png?raw=true)
 
 **My custom minimal neovim configuration**
+
+</div>
 
 ## Installation
 > Install requires Neovim 0.9+. Always review the code before installing a configuration.
