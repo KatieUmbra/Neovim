@@ -116,6 +116,10 @@ local configs = {
 			require("crates").setup({})
 		end,
 	},
+	["sql"] = {
+		lsp = "sqlls",
+		config = {},
+	},
 	["typescript"] = {
 		init = function()
 			require("typescript-tools").setup({})

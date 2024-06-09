@@ -29,6 +29,7 @@ require("nvim-treesitter.configs").setup({
 		"yuck",
 		"toml",
 		"sxhkdrc",
+		"sql",
 		"typescript",
 		"javascript",
 		"svelte",

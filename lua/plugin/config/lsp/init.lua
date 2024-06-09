@@ -20,6 +20,7 @@ local servers = {
 	svelte = { "npm", "svelte-language-server" },
 	tailwindcss = { "npm", "@tailwindcss/language-server" },
 	css = "vscode-langservers-extracted",
+	sqlls = { "npm", "sql-language-server" },
 	rust = "rust-analyzer",
 	typescript = "nodejs",
 }

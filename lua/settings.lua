@@ -26,6 +26,7 @@ local M = {}
 --  svelte => svelte-language-server
 --  tailwind => @tailwindcss/language-server
 --  toml => @taplo/cli
+--  sql => sql-language-server
 --
 --  pip:
 --  python => python-lsp-server
@@ -46,6 +47,7 @@ M.language_servers = {
 	"tailwind",
 	"css",
 	"rust",
+	"sql",
 	"typescript",
 }
 

@@ -15,7 +15,8 @@
 		"vim-language-server",
 		"svelte-language-server",
 		"@tailwindcss/language-server",
-		"@taplo/cli"
+		"@taplo/cli",
+		"sql-language-server"
 	],
 	"pip3": [
 		"python-lsp-server"

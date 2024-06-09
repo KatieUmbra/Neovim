@@ -61,6 +61,7 @@ the available languages must be added with these names.
 | svelte         | npm             | svelte-language-server             |
 | tailwind       | npm             | @tailwindcss/language-server       |
 | toml           | npm             | @taplo/cli                         |
+| sqlls          | npm             | sql-language-server                |
 | python         | pip             | python-lsp-server                  |
 
 ```lua
@@ -96,6 +97,7 @@ Lsp support for the following languages
 - Vimscript
 - Svelte
 - Toml
+- Sql
 - GLSL
 
 ### Dap
