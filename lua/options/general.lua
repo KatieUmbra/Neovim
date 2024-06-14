@@ -25,7 +25,7 @@ options.incsearch = true
 options.hlsearch = false
 
 -- [[ Whitespace ]]
-options.expandtab = false
+options.expandtab = true
 options.shiftwidth = 4
 options.softtabstop = 4
 options.tabstop = 4

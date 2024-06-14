@@ -21,7 +21,12 @@ require("oil").setup({
 		border = "rounded",
 	},
 	win_options = {
-		signcolumn = "yes",
+		signcolumn = "no",
 		cursorcolumn = true,
+	},
+	git = {
+		add = function(path)
+			return true
+		end,
 	},
 })
