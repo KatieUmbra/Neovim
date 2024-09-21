@@ -13,6 +13,9 @@ require("formatter").setup({
 		rust = {
 			require("formatter.filetypes.rust").rustfmt,
 		},
+		svelte = {
+			require("formatter.filetypes.svelte").prettier,
+		},
 	},
 	["*"] = {
 		require("formatter.filetypes.any").remove_trailing_whitespace,

@@ -23,4 +23,5 @@ local servers = {
 	sql = { "npm", "sql-language-server" },
 	rust = "rust-analyzer",
 	typescript = "nodejs",
+	zig = "zls",
 }

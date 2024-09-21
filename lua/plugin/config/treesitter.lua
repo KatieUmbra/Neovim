@@ -33,11 +33,9 @@ require("nvim-treesitter.configs").setup({
 		"typescript",
 		"javascript",
 		"svelte",
-		"zig",
 		"dap_repl",
 		"bash",
 		"glsl",
-		"haskell",
 	},
 	highlight = {
 		enable = true,

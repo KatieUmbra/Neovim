@@ -110,6 +110,10 @@ local configs = {
 		lsp = "cssls",
 		config = { capabilities = capabilities },
 	},
+	["zig"] = {
+		lsp = "zls",
+		config = {},
+	},
 	["rust"] = {
 		init = function()
 			require("rust-tools").setup({})

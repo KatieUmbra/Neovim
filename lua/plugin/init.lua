@@ -65,6 +65,8 @@ require("lazy").setup({
 		"startup-nvim/startup.nvim",
 		--[[ Buffer File Browser ]]
 		"stevearc/oil.nvim",
+		--[[ Screenshots ]]
+		{ "mistricky/codesnap.nvim", build = "make" },
 		-- =============
 		-- 	Completion
 		-- =============

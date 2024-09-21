@@ -14,6 +14,7 @@ local M = {}
 --  rust => rust-analyzer
 --  glsl => glsl_analyzer
 --  c => clangd
+--  zig => zls
 --
 --  cargo:
 --  cmake => neocmakelsp
@@ -49,6 +50,7 @@ M.language_servers = {
 	"rust",
 	"sql",
 	"typescript",
+	"zig",
 }
 
 --[[
