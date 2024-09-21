@@ -56,6 +56,7 @@ the available languages must be added with these names.
 | rust           | default         | rust-analyzer                      |
 | glsl           | default         | glsl_analyzer                      |
 | c              | default         | clangd                             |
+| zig                 | default      | zls          |
 | cmake          | cargo           | neocmakelsp                        |
 | yaml           | npm             | vscode-langservers-extracted       |
 | json           | npm             | vscode-langservers-extracted       |
@@ -89,6 +90,7 @@ M.colorscheme = "rosepine"
 
 Lsp support for the following languages
 
+- C/C++
 - Lua
 - Rust
 - Typescript
@@ -103,6 +105,8 @@ Lsp support for the following languages
 - Toml
 - Sql
 - GLSL
+- Tailwind
+- Zig
 
 ### Dap
 
@@ -192,6 +196,7 @@ tmux seamless integration
 + [aserowy/tmux.nvim](https://dotfyle.com/plugins/aserowy/tmux.nvim)
 ### utility
 
++ [mistricky/codesnap.nvim](https://dotfyle.com/plugins/mistricky/codesnap.nvim)
 + [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 
