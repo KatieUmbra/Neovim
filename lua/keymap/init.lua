@@ -7,5 +7,4 @@ require("keymap.oil")
 require("keymap.format")
 require("keymap.clangd")
 require("keymap.mappings")
-
--- require("keymap.cmake")
+require("keymap.cmake")

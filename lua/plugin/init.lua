@@ -49,6 +49,8 @@ require("lazy").setup({
 		"navarasu/onedark.nvim",
 
 		-- [[ OTHER ]]
+		-- [[ Showkeys ]]
+		{ "nvchad/showkeys", cmd = "ShowkeysToggle" },
 		--[[ Highlight Colors ]]
 		"brenoprata10/nvim-highlight-colors",
 		--[[ Indent Guides ]]

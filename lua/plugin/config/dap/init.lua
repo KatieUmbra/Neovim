@@ -11,8 +11,7 @@ adapter("c_cpp")
 adapter("rust")
 adapter("python")
 adapter("ui")
--- cmake appears to be broken
--- adapter("cmake")
+adapter("cmake")
 
 fun.sign_define("DapBreakpoint", {
 	text = "●",
