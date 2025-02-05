@@ -62,5 +62,6 @@ M.language_servers = {
 -- - rosepine
 -- - carbonfox
 --]]
+
 M.colorscheme = "rosepine"
 return M

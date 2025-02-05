@@ -112,6 +112,8 @@ require("lazy").setup({
 		"kovetskiy/sxhkd-vim",
 		--[[ Kitty ]]
 		"fladson/vim-kitty",
+		--[[ Rhai ]]
+		"rhaiscript/vim-rhai",
 		-- ============
 		-- 	Debugging
 		-- ============
