@@ -24,15 +24,16 @@ options.smartcase = true
 options.incsearch = true
 options.hlsearch = false
 
--- [[ Whitespace ]]
-options.expandtab = true
-options.shiftwidth = 4
-options.softtabstop = 4
-options.tabstop = 4
-
 -- [[ Splits ]]
 options.splitright = false
 options.splitbelow = false
 
 -- [[ Mouse ]]
 options.mouse = ""
+
+-- [[ Whitespace ]]
+options.expandtab = true
+options.shiftwidth = 4
+options.softtabstop = 4
+options.tabstop = 4
+vim.opt.shiftwidth = 4

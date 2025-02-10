@@ -63,5 +63,8 @@ M.language_servers = {
 -- - carbonfox
 --]]
 
+-- {# replace_in(`"`, data.color.name) #}
 M.colorscheme = "rosepine"
+-- {# replace_in(`"`, data.color.variant) #}
+M.variant = "default"
 return M
