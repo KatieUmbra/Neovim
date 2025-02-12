@@ -21,6 +21,7 @@ local colorschemes = {
 				variant = "main",
 				dark_variant = "main",
 			})
+			vim.opt.background = "dark"
 			vim.cmd([[ colorscheme rose-pine ]])
 		end,
 		["moon"] = function()
@@ -29,6 +30,7 @@ local colorschemes = {
 				dark_variant = "moon",
 			})
 			vim.cmd([[ colorscheme rose-pine ]])
+			vim.opt.background = "dark"
 		end,
 		["dawn"] = function()
 			require("rose-pine").setup({
@@ -41,11 +43,33 @@ local colorschemes = {
 	["carbonfox"] = {
 		["default"] = function()
 			vim.cmd([[ colorscheme carbonfox ]])
+			vim.opt.background = "dark"
 		end,
 	},
+	["catppuccin"] = {
+		["latte"] = function()
+			vim.cmd([[ colorscheme catppuccin-latte ]])
+		end,
+		["frappe"] = function()
+			vim.cmd([[ colorscheme catppuccin-frappe ]])
+			vim.opt.background = "dark"
+		end,
+		["macchiato"] = function()
+			vim.cmd([[ colorscheme catppuccin-macchiato ]])
+			vim.opt.background = "dark"
+		end,
+		["mocha"] = function()
+			vim.cmd([[ colorscheme catpuccin-mocha ]])
+			vim.opt.background = "dark"
+		end,
+	},
+    ["nord"] = {
+        ["default"] = function()
+            vim.cmd([[ colorscheme nord ]])
+			vim.opt.background = "dark"
+        end
+    }
 }
 
 local settings = require("settings")
 colorschemes[settings.colorscheme][settings.variant]()
-
-vim.opt.background = "dark"

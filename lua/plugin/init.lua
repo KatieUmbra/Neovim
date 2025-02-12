@@ -47,6 +47,10 @@ require("lazy").setup({
 		"EdenEast/nightfox.nvim",
 		--[[ One Dark: theme ]]
 		"navarasu/onedark.nvim",
+		--[[ Catppuccin theme ]]
+		"catppuccin/nvim",
+		--[[ Nord theme ]]
+		"shaunsingh/nord.nvim",
 
 		-- [[ OTHER ]]
 		-- [[ Showkeys ]]

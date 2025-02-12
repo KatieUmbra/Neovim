@@ -64,7 +64,7 @@ M.language_servers = {
 --]]
 
 -- {# replace_in(`"`, data.color.name) #}
-M.colorscheme = "rosepine"
+M.colorscheme = "nord"
 -- {# replace_in(`"`, data.color.variant) #}
 M.variant = "default"
 return M
