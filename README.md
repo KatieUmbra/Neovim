@@ -56,7 +56,7 @@ the available languages must be added with these names.
 | rust           | default         | rust-analyzer                      |
 | glsl           | default         | glsl_analyzer                      |
 | c              | default         | clangd                             |
-| zig                 | default      | zls          |
+| zig            | default         | zls                                |
 | cmake          | cargo           | neocmakelsp                        |
 | yaml           | npm             | vscode-langservers-extracted       |
 | json           | npm             | vscode-langservers-extracted       |
@@ -78,10 +78,30 @@ M.language_servers = {
 
 ### Colorscheme
 
-currently there are only two colorschemes available, `rosepine` and `carbonfox`
+Currently there are 3 colorschemes, `rosepine`, `catppuccin`, `carbonfox`, and `nord`.
+
+The variants are:
+
+1. Rose Pine
+    - default
+    - moon
+    - dawn
+
+2. Catppuccin
+    - latte
+    - frappe
+    - macchiato
+    - mocha
+
+3. Carbonfox
+    - default
+
+4. Nord
+    - default
 
 ```lua
 M.colorscheme = "rosepine"
+M.variant = "moon"
 ```
 
 ## Features
@@ -117,10 +137,6 @@ Debugging support for the following languages
 - Python
 - Rust
 
-### Tmux
-
-tmux seamless integration
-
 ## Plugins
 
 ### code-runner
@@ -131,7 +147,9 @@ tmux seamless integration
 + [brenoprata10/nvim-highlight-colors](https://dotfyle.com/plugins/brenoprata10/nvim-highlight-colors)
 ### colorscheme
 
++ [shaunsingh/nord.nvim](https://dotfyle.com/plugins/shaunsingh/nord.nvim)
 + [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
++ [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
 + [navarasu/onedark.nvim](https://dotfyle.com/plugins/navarasu/onedark.nvim)
 + [EdenEast/nightfox.nvim](https://dotfyle.com/plugins/EdenEast/nightfox.nvim)
 ### completion
@@ -162,22 +180,25 @@ tmux seamless integration
 ### fuzzy-finder
 
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+### icon
+
++ [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
 ### indent
 
 + [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
 ### lsp
 
-+ [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
-+ [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 + [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
++ [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
++ [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
 ### media
 
 + [andweeb/presence.nvim](https://dotfyle.com/plugins/andweeb/presence.nvim)
 ### nvim-dev
 
-+ [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
 + [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
++ [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
@@ -197,8 +218,8 @@ tmux seamless integration
 ### utility
 
 + [mistricky/codesnap.nvim](https://dotfyle.com/plugins/mistricky/codesnap.nvim)
-+ [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
++ [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 
 ## Work in progress
 
