@@ -118,6 +118,8 @@ require("lazy").setup({
 		"fladson/vim-kitty",
 		--[[ Rhai ]]
 		"rhaiscript/vim-rhai",
+		--[[ KDL ]]
+		"imsnif/kdl.vim",
 		-- ============
 		-- 	Debugging
 		-- ============

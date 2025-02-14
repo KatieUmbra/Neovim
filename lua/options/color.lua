@@ -42,7 +42,7 @@ M.carbonfox = {
 	},
 }
 
-M.catpuccin = {
+M.catppuccin = {
 	["latte"] = {
 		["Red"] = { color = "d20f39", id = 1 },
 		["Yellow"] = { color = "df8e1d", id = 2 },

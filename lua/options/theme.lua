@@ -59,7 +59,7 @@ local colorschemes = {
 			vim.opt.background = "dark"
 		end,
 		["mocha"] = function()
-			vim.cmd([[ colorscheme catpuccin-mocha ]])
+			vim.cmd([[ colorscheme catppuccin-mocha ]])
 			vim.opt.background = "dark"
 		end,
 	},
