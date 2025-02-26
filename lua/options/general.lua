@@ -1,4 +1,4 @@
-local options = vim.opt
+local options = vim.o
 local global = vim.g
 
 global.mapleader = ","
@@ -36,4 +36,3 @@ options.expandtab = true
 options.shiftwidth = 4
 options.softtabstop = 4
 options.tabstop = 4
-vim.opt.shiftwidth = 4

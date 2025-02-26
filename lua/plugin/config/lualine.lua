@@ -19,4 +19,10 @@ require("lualine").setup({
 			TelescopePrompt = {},
 		},
 	},
+	extensions = {
+		"lazy",
+		"man",
+		"nvim-dap-ui",
+		"oil",
+	},
 })

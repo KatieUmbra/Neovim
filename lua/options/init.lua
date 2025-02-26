@@ -1,5 +1,5 @@
-require("options.completion")
-require("options.general")
 require("options.theme")
 require("options.color")
+require("options.completion")
 require("options.listchars")
+require("options.general")
