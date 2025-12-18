@@ -1,10 +1,6 @@
-local lspconfig = require("lspconfig")
+require("lspconfig")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-local lsp_defaults = lspconfig.util.default_config
-lsp_defaults.capabilities =
-	vim.tbl_deep_extend("force", lsp_defaults.capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 require("neodev").setup({})
 
@@ -64,47 +60,34 @@ local configs = {
 	},
 	["c"] = {
 		lsp = "clangd",
-		config = {
-			on_attach = function()
-				require("clangd_extensions.inlay_hints").setup_autocmd()
-				require("clangd_extensions.inlay_hints").set_inlay_hints()
-			end,
-		},
 		init = function()
 			require("clangd_extensions").setup(require("plugin.config.lsp.clangd"))
+			vim.lsp.inlay_hint.enable()
 		end,
 	},
 	["docker compose"] = {
 		lsp = "docker_compose_language_service",
-		config = {},
 	},
 	["docker"] = {
 		lsp = "dockerls",
-		config = {},
 	},
 	["vim"] = {
 		lsp = "vimls",
-		config = {},
 	},
 	["cmake"] = {
 		lsp = "neocmake",
-		config = {},
 	},
 	["glsl"] = {
 		lsp = "glsl_analyzer",
-		config = {},
 	},
 	["toml"] = {
 		lsp = "taplo",
-		config = {},
 	},
 	["svelte"] = {
 		lsp = "svelte",
-		config = {},
 	},
 	["tailwind"] = {
 		lsp = "tailwindcss",
-		config = {},
 	},
 	["css"] = {
 		lsp = "cssls",
@@ -112,7 +95,6 @@ local configs = {
 	},
 	["zig"] = {
 		lsp = "zls",
-		config = {},
 	},
 	["rust"] = {
 		init = function()
@@ -122,7 +104,9 @@ local configs = {
 	},
 	["sql"] = {
 		lsp = "sqlls",
-		config = {},
+	},
+	["gleam"] = {
+		lsp = "gleam",
 	},
 	["typescript"] = {
 		init = function()
@@ -134,9 +118,13 @@ local configs = {
 local settings = require("settings")
 for _, i in ipairs(settings.language_servers) do
 	local lsp = configs[i]
-	if lsp.config ~= nil and lsp.lsp ~= nil then
-		lspconfig[lsp.lsp].setup(lsp.config)
-	else
-		lsp.init()
+	if lsp.lsp ~= nil then
+		vim.lsp.enable(lsp.lsp)
+		if lsp.config ~= nil then
+			vim.lsp.config(lsp.lsp, lsp.config)
+		end
+		if lsp.init ~= nil then
+			lsp.init()
+		end
 	end
 end

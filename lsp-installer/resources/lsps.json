@@ -4,7 +4,8 @@
 		"rust-analyzer",
 		"glsl_analyzer",
 		"clangd",
-        "zls"
+        "zls",
+        "gleam"
 	],
 	"cargo": [
 		"neocmakelsp"

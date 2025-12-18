@@ -3,6 +3,7 @@
 ignored.lua
 *.vim
 /syntax
+syntax/
 .vscode
 pycache
 __pycache__
