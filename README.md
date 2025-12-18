@@ -79,7 +79,7 @@ M.language_servers = {
 
 ### Colorscheme
 
-Currently there are 3 colorschemes, `rosepine`, `catppuccin`, `carbonfox`, and `nord`.
+Currently there are 4 colorschemes, `rosepine`, `catppuccin`, `carbonfox`, and `nord`.
 
 The variants are:
 
