@@ -15,6 +15,7 @@ local M = {}
 --  glsl => glsl_analyzer
 --  c => clangd
 --  zig => zls
+--  gleam => gleam
 --
 --  cargo:
 --  cmake => neocmakelsp
@@ -51,6 +52,7 @@ M.language_servers = {
 	"sql",
 	"typescript",
 	"zig",
+	"gleam",
 }
 
 --[[
@@ -60,6 +62,8 @@ M.language_servers = {
 -- Available colorschemes for delimiters and indentation
 --
 -- - rosepine
+-- - catpuccin
+-- - nord
 -- - carbonfox
 --]]
 

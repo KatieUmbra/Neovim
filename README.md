@@ -57,6 +57,7 @@ the available languages must be added with these names.
 | glsl           | default         | glsl_analyzer                      |
 | c              | default         | clangd                             |
 | zig            | default         | zls                                |
+| gleam          | default         | gleam                              |
 | cmake          | cargo           | neocmakelsp                        |
 | yaml           | npm             | vscode-langservers-extracted       |
 | json           | npm             | vscode-langservers-extracted       |
@@ -127,6 +128,7 @@ Lsp support for the following languages
 - GLSL
 - Tailwind
 - Zig
+- Gleam
 
 ### Dap
 
@@ -189,6 +191,7 @@ Debugging support for the following languages
 ### lsp
 
 + [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
++ [p00f/clangd_extensions.nvim](https://dotfyle.com/plugins/p00f/clangd_extensions.nvim)
 + [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
 ### media
