@@ -73,6 +73,8 @@ require("lazy").setup({
 		"stevearc/oil.nvim",
 		--[[ Screenshots ]]
 		{ "mistricky/codesnap.nvim", build = "make" },
+		--[[ Comment Headers ]]
+		"attilarepka/header.nvim",
 		-- =============
 		-- 	Completion
 		-- =============
