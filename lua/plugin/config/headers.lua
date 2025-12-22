@@ -8,6 +8,6 @@ require("header").setup({
 	date_modified_fmt = "%Y-%m-%d %H:%M:%S",
 	line_separator = "===============",
 	use_block_header = true,
-	license_from_file = true,
+	license_from_file = false,
 	author_from_git = true,
 })

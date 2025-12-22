@@ -10,7 +10,7 @@ return {
 		cmd = {
 			"clangd",
 			"--background-index",
-			"--enable-config",
+			"--compile-commands-dir=build",
 		},
 	},
 	extensions = {

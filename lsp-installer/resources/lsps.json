@@ -5,7 +5,8 @@
 		"glsl_analyzer",
 		"clangd",
         "zls",
-        "gleam"
+        "gleam",
+        "ty",
 	],
 	"cargo": [
 		"neocmakelsp"
@@ -21,6 +22,5 @@
 		"sql-language-server"
 	],
 	"pip3": [
-		"python-lsp-server"
 	]
 }

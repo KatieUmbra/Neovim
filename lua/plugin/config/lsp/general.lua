@@ -2,8 +2,6 @@ require("lspconfig")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
-require("neodev").setup({})
-
 local configs = {
 	["lua"] = {
 		lsp = "lua_ls",
@@ -30,19 +28,7 @@ local configs = {
 		},
 	},
 	["python"] = {
-		lsp = "pylsp",
-		config = {
-			settings = {
-				pylsp = {
-					plugins = {
-						pycodestyle = {
-							ignore = { "W391" },
-							maxLineLength = 100,
-						},
-					},
-				},
-			},
-		},
+		lsp = "ty",
 	},
 	["yaml"] = {
 		lsp = "yamlls",

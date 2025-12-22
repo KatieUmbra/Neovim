@@ -87,7 +87,16 @@ require("lazy").setup({
 		--[[ Cmp Commandline ]]
 		"hrsh7th/cmp-cmdline",
 		--[[ Cmp ]]
-		"hrsh7th/nvim-cmp",
+		{
+			"hrsh7th/nvim-cmp",
+			opts = function(_, opts)
+				opts.sources = opts.sources or {}
+				table.insert(opts.sources, {
+					name = "lazydev",
+					group_index = 0, -- set group index to 0 to skip loading LuaLS completions
+				})
+			end,
+		},
 		--[[ Snippet Engine ]]
 		"SirVer/ultisnips",
 		--[[ Snippet Cmp Integration ]]
@@ -98,7 +107,11 @@ require("lazy").setup({
 		--[[ General ]]
 		"neovim/nvim-lspconfig",
 		--[[ Neovim Lua API ]]
-		"folke/neodev.nvim",
+		{
+			"folke/lazydev.nvim",
+			ft = "lua",
+			opts = { library = { { path = "${3rd}/luv/library", words = { "vim%.uv" } } } },
+		},
 		--[[ Rust ]]
 		"simrat39/rust-tools.nvim",
 		--[[ Rust Crates ]]
