@@ -11,6 +11,7 @@ return {
 			"clangd",
 			"--background-index",
 			"--compile-commands-dir=build",
+			"--experimental-modules-support",
 		},
 	},
 	extensions = {
