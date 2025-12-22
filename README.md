@@ -58,6 +58,7 @@ the available languages must be added with these names.
 | c              | default         | clangd                             |
 | zig            | default         | zls                                |
 | gleam          | default         | gleam                              |
+| python         | default         | ty                                 |
 | cmake          | cargo           | neocmakelsp                        |
 | yaml           | npm             | vscode-langservers-extracted       |
 | json           | npm             | vscode-langservers-extracted       |
@@ -68,7 +69,7 @@ the available languages must be added with these names.
 | tailwind       | npm             | @tailwindcss/language-server       |
 | toml           | npm             | @taplo/cli                         |
 | sql            | npm             | sql-language-server                |
-| python         | pip             | python-lsp-server                  |
+
 
 ```lua
 M.language_servers = {
