@@ -142,6 +142,7 @@ Debugging support for the following languages
 
 ## Plugins
 
+
 ### code-runner
 
 + [Civitasv/cmake-tools.nvim](https://dotfyle.com/plugins/Civitasv/cmake-tools.nvim)
@@ -202,7 +203,7 @@ Debugging support for the following languages
 
 + [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
-+ [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
++ [folke/lazydev.nvim](https://dotfyle.com/plugins/folke/lazydev.nvim)
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
@@ -224,6 +225,7 @@ Debugging support for the following languages
 + [mistricky/codesnap.nvim](https://dotfyle.com/plugins/mistricky/codesnap.nvim)
 + [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 + [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
++ [attilarepka/header.nvim](https://dotfyle.com/plugins/attilarepka/header.nvim)
 
 ## Work in progress
 
