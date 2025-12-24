@@ -94,6 +94,9 @@ local configs = {
 	["gleam"] = {
 		lsp = "gleam",
 	},
+	["odin"] = {
+		lsp = "ols",
+	},
 	["typescript"] = {
 		init = function()
 			require("typescript-tools").setup({})

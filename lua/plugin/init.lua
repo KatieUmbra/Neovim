@@ -35,7 +35,7 @@ require("lazy").setup({
 		--[[ Dev Icons ]]
 		"nvim-tree/nvim-web-devicons",
 		--[[ Formatting ]]
-		"mhartington/formatter.nvim",
+		"stevearc/conform.nvim",
 		-- ========
 		-- 	Vanity
 		-- ========

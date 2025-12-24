@@ -59,6 +59,7 @@ the available languages must be added with these names.
 | zig            | default         | zls                                |
 | gleam          | default         | gleam                              |
 | python         | default         | ty                                 |
+| odin           | default         | ols                                |
 | cmake          | cargo           | neocmakelsp                        |
 | yaml           | npm             | vscode-langservers-extracted       |
 | json           | npm             | vscode-langservers-extracted       |
@@ -130,6 +131,7 @@ Lsp support for the following languages
 - Tailwind
 - Zig
 - Gleam
+- Odin
 
 ### Dap
 

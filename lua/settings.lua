@@ -16,6 +16,8 @@ local M = {}
 --  c => clangd
 --  zig => zls
 --  gleam => gleam
+--  python => ty
+--  odin => odinls
 --
 --  cargo:
 --  cmake => neocmakelsp
@@ -29,9 +31,6 @@ local M = {}
 --  tailwind => @tailwindcss/language-server
 --  toml => @taplo/cli
 --  sql => sql-language-server
---
---  pip:
---  python => python-lsp-server
 --]]
 M.language_servers = {
 	"lua",
@@ -53,6 +52,7 @@ M.language_servers = {
 	"typescript",
 	"zig",
 	"gleam",
+	"odin",
 }
 
 --[[

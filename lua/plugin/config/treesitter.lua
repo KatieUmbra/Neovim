@@ -37,6 +37,7 @@ require("nvim-treesitter.configs").setup({
 		"bash",
 		"glsl",
 		"gleam",
+		"odin",
 	},
 	highlight = {
 		enable = true,
