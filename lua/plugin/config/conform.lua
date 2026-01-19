@@ -7,6 +7,9 @@ require("conform").setup({
 		svelte = { "prettier" },
 		odin = { "odinfmt" },
 		python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
+		shell = { "shfmt" },
+		bash = { "shfmt" },
+		zsh = { "shfmt" },
 		["*"] = { "trim_whitespace" },
 	},
 	formatters = {
