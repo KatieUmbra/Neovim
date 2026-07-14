@@ -2,7 +2,9 @@ local function lsp(name)
 	return require("plugin.config.lsp." .. name)
 end
 
+lsp("rhai")
 lsp("general")
+lsp("clangd")
 
 ---@diagnostic disable-next-line: unused-local
 local servers = {

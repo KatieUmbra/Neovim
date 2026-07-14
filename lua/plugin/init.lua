@@ -17,10 +17,8 @@ require("lazy").setup({
 		--[[ Treesitter ]]
 		{
 			"nvim-treesitter/nvim-treesitter",
-			--[[]]
-			build = function()
-				vim.cmd(":TSUpdate")
-			end,
+			lazy = false,
+			build = ":TSUpdate"
 		},
 		--[[ Auto Pairs ]]
 		"windwp/nvim-autopairs",
@@ -52,6 +50,9 @@ require("lazy").setup({
 		--[[ Nord theme ]]
 		"shaunsingh/nord.nvim",
 
+		-- [[ Screenshots ]]
+		{ "mistricky/codesnap.nvim", tag = "v2.0.0" },
+
 		-- [[ OTHER ]]
 		-- [[ Showkeys ]]
 		{ "nvchad/showkeys", cmd = "ShowkeysToggle" },
@@ -71,8 +72,6 @@ require("lazy").setup({
 		"startup-nvim/startup.nvim",
 		--[[ Buffer File Browser ]]
 		"stevearc/oil.nvim",
-		--[[ Screenshots ]]
-		{ "mistricky/codesnap.nvim", build = "make" },
 		--[[ Comment Headers ]]
 		"attilarepka/header.nvim",
 		-- =============
@@ -135,6 +134,10 @@ require("lazy").setup({
 		"rhaiscript/vim-rhai",
 		--[[ KDL ]]
 		"imsnif/kdl.vim",
+        --[[ Rhai ]]
+        "rhaiscript/vim-rhai",
+        --[[ NBCL ]]
+        "NBCL-Lang/vim-nbcl",
 		-- ============
 		-- 	Debugging
 		-- ============

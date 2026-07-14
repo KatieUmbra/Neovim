@@ -1,6 +1,7 @@
 require("codesnap").setup({
-	mac_window_bar = false,
-	watermark = "",
-	bg_theme = "peach",
-	has_line_number = true,
+	show_line_number = true,
+    watermark = {
+        content = "",
+        font_family = "MonaspaceNeon"
+    }
 })

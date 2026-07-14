@@ -1,5 +1,3 @@
-require("lspconfig")
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 local configs = {
@@ -51,9 +49,6 @@ local configs = {
 			vim.lsp.inlay_hint.enable()
 		end,
 	},
-	["docker compose"] = {
-		lsp = "docker_compose_language_service",
-	},
 	["docker"] = {
 		lsp = "dockerls",
 	},
@@ -88,6 +83,9 @@ local configs = {
 			require("crates").setup({})
 		end,
 	},
+    ["rhai"] = {
+        lsp = "rhai-lsp"
+    },
 	["sql"] = {
 		lsp = "sqlls",
 	},

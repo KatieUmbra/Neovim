@@ -9,28 +9,22 @@ local M = {}
 -- add the elements before the arrow `=>` inside `M.language_servers`
 -- the text after the arrow is the exact name of the package to install
 --
---  yay:
---  lua => lua-language-server
---  rust => rust-analyzer
---  glsl => glsl_analyzer
---  c => clangd
---  zig => zls
---  gleam => gleam
---  python => ty
---  odin => odinls
---
---  cargo:
---  cmake => neocmakelsp
---
---  npm:
---  yaml, json => vscode-langservers-extracted
---  docker compose => @microsoft/compose-language-service
---  docker => dockerfile-language-server-nodejs
---  vim => vim-language-server
---  svelte => svelte-language-server
---  tailwind => @tailwindcss/language-server
---  toml => @taplo/cli
---  sql => sql-language-server
+--	lua => lua-language-server
+--	rust => rust-analyzer
+--	glsl => glsl_analyzer-bin
+--	c => clang
+--	cmake => neocmakelsp-bin
+--	yaml, json => vscode-langservers-extracted
+--	docker => dockerfile-language-server
+--	vim => vim-language-server
+--	svelte => svelte-language-server
+--	tailwind => tailwindcss-language-server
+--	toml => taplo-cli
+--	sql => sql-language-server
+--	zig => zls
+--	gleam => gleam
+--	python => ty
+--	odin => odinls
 --]]
 M.language_servers = {
 	"lua",
@@ -38,7 +32,6 @@ M.language_servers = {
 	"python",
 	"yaml",
 	"c",
-	"docker compose",
 	"docker",
 	"vim",
 	"cmake",
@@ -68,7 +61,7 @@ M.language_servers = {
 --]]
 
 -- {# replace_in(`"`, data.color.name) #}
-M.colorscheme = "rosepine"
+M.colorscheme = "nord"
 -- {# replace_in(`"`, data.color.variant) #}
-M.variant = "moon"
+M.variant = "default"
 return M
