@@ -28,7 +28,7 @@ local colorscheme_map = {
                 MiniPickNormal = { bg = "none" },
                 MiniPickPrompt = { bg = "none" },
                 MiniPickPromptCaret = { bg = "none" },
-                MiniPickPromptPrefix = {bg = "none" },
+                MiniPickPromptPrefix = { bg = "none" },
                 MiniPickMatchCurrent = { fg = "love", bg = "surface" },
                 NormalFloat = { bg = "none" },
                 FloatBorder = { bg = "none" },
@@ -177,7 +177,7 @@ local colorscheme_map = {
                 highlights.MiniPickNormal = { bg = colors.none }
                 highlights.MiniPickPrompt = { bg = colors.none }
                 highlights.MiniPickPromptCaret = { bg = colors.none }
-                highlights.MiniPickPromptPrefix = {bg = colors.none }
+                highlights.MiniPickPromptPrefix = { bg = colors.none }
                 highlights.MiniPickMatchCurrent = { fg = colors.snow_storm.brightest, bg = colors.polar_night.bright }
                 highlights.NormalFloat = { bg = colors.none }
                 highlights.FloatBorder = { bg = colors.none }
@@ -216,6 +216,6 @@ vim.api.nvim_create_autocmd("VimEnter", {
             selected_variant = merge(selected_variant, selected_colorscheme.globals)
         end
         require(selected_colorscheme.require_name).setup(selected_colorscheme.variants[opts.variant])
-        vim.cmd("colorscheme "..selected_colorscheme.vim_name)
+        vim.cmd("colorscheme " .. selected_colorscheme.vim_name)
     end
 })

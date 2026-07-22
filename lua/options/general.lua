@@ -1,9 +1,9 @@
 local M = {}
 
 -- {# replace_in(`"`, data.color.name) #}
-M.colorscheme = "rosepine"
+M.colorscheme = "nord"
 -- {# replace_in(`"`, data.color.variant) #}
-M.variant = "moon"
+M.variant = "default"
 -- {# replace_in(`"`, data.color.brightness) #}
 M.brightness = "dark"
 

@@ -20,6 +20,7 @@ packages=(
     "gleam"
     "ty"
     "odinls"
+    "yaml-language-server"
     "rhai-lsp-git"
     # Formatters
     "lua-format-git"
