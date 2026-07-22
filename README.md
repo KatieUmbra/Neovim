@@ -31,7 +31,7 @@ NVIM_APPNAME=KatieUmbra/Neovim/ nvim
 
 ## Configuration
 
-I focused on making this config highly configurable, look for every file inside lua/options
+I focused on making this config highly configurable, look for every file inside `lua/options`
 
 ### Keymap
 
@@ -50,7 +50,9 @@ You can change `lua/options/vim.lua` to set vim options, both `vim.o` and `vim.g
 You can choose a colorscheme between `rosepine`, `catppuccin`, and `nord`, aswell as a variant
 
 **rosepine** has `dawn`, `moon` and `default`
+
 **catppuccin** has `latte`, `frappe`, `macchiato` and `mocha`
+
 **nord** only has `default`
 
 note that for using a light theme, like catppuccin-latte or rosepine-dawn, you need to change `M.brightness` to `light` (it maps to `vim.o.background`)
