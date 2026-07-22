@@ -4,8 +4,8 @@
 
 <a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=flat" /></a>
 
-![Intro]("showcase/intro.png")
-![Showcase]("showcase/showcase.png")
+![Intro](showcase/intro.png)
+![Showcase](showcase/showcase.png)
 
 **Truly minimal, with a builtin-first design philosphy, no bloat, no nonsense**
 
