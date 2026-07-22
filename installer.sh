@@ -22,7 +22,7 @@ packages=(
     "odinls"
     "rhai-lsp-git"
     # Formatters
-    "lua-format"
+    "lua-format-git"
     "ruff"
     "python-gersemi"
     "prettierd"
@@ -40,7 +40,7 @@ var=$( IFS=$' '; echo "${packages[*]}" )
 
 echo "Installing neovim plugins\n"
 
-nvim --headless "+lua vim.pack.update()" +qa
+nvim --headless "+lua vim.pack.update()" +qa &
 
 echo "\nInstalling dependencies\n"
 

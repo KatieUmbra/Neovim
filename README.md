@@ -24,6 +24,8 @@ chmod +x ./installer.sh
 ```
 
 Open Neovim with this config:
+**KEEP IN MIND THAT IT COULD TAKE A MINUTE TO OPEN THE FIRST TIME**,
+if it freezes or appears to not work, just wait for a bit, this is the only time you need to worry about this
 
 ```sh
 NVIM_APPNAME=KatieUmbra/Neovim/ nvim
