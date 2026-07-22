@@ -1,9 +1,15 @@
+<div align="center">
+
 # Katherine's minimal neovim config
 
 <a href="https://dotfyle.com/KatieUmbra/neovim"><img src="https://dotfyle.com/KatieUmbra/neovim/badges/plugins?style=flat" /></a>
 
-![Intro]("https://github.com/KatieUmbra/Neovim/blob/main/showcase/intro.png?raw=true")
-![Intro]("https://github.com/KatieUmbra/Neovim/blob/main/showcase/showcase.png?raw=true")
+![Intro]("https://raw.githubusercontent.com/KatieUmbra/Neovim/refs/heads/main/showcase/intro.png")
+![Showcase]("https://raw.githubusercontent.com/KatieUmbra/Neovim/refs/heads/main/showcase/showcase.png")
+
+**Truly minimal, with a builtin-first design philosphy, no bloat, no nonsense**
+
+</div>
 
 ## Install Instructions
 
