@@ -1,0 +1,14 @@
+./plugin/
+./plugin/packer_compiled.lua
+ignored.lua
+*.vim
+/syntax
+syntax/
+.vscode
+pycache
+__pycache__
+log.txt
+lazy-lock.json
+lsp-installer/node_modules/
+lsp-installer/node_modules/*
+-h
