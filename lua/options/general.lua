@@ -8,26 +8,44 @@ M.variant = "default"
 M.brightness = "dark"
 
 M.languages = {
-    "c",
-    "lua",
-    "vim",
-    "rust",
-    "python",
-    "cmake",
-    "css",
-    "sql",
-    "typescript",
-    "html",
-    "svelte",
-    "glsl",
-    "gleam",
-    "zig",
-    "odin",
-    "rhai",
-    "toml",
-    "yaml",
-    "docker",
-    "tailwind",
+    ["c"] = true,
+    ["lua"] = true,
+    ["vim"] = true,
+    ["rust"] = true,
+    ["python"] = true,
+    ["cmake"] = true,
+    ["css"] = true,
+    ["sql"] = true,
+    ["typescript"] = true,
+    ["html"] = true,
+    ["svelte"] = true,
+    ["glsl"] = true,
+    ["gleam"] = true,
+    ["zig"] = true,
+    ["odin"] = true,
+    ["rhai"] = true,
+    ["toml"] = true,
+    ["yaml"] = true,
+    ["docker"] = true,
+    ["tailwind"] = true,
+}
+
+M.format_notificaion = true
+
+M.formatters = {
+    ["clang-format"] = true,
+    ["lua-format "] = true,
+    ["rustfmt"] = true,
+    ["ruff_format"] = true,
+    ["gersemi"] = true,
+    ["prettierd"] = true,
+    ["sqruff"] = true,
+    ["gleam"] = true,
+    ["zigfmt"] = true,
+    ["odinfmt"] = true,
+    ["taplo"] = true,
+    ["yamlfmt"] = true,
+    ["rustywind"] = true
 }
 
 return M

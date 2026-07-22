@@ -40,6 +40,10 @@
       "rev": "a35f08f63b73f0ffac045cd175fb2a22e167c39c",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
+    "nbcl": {
+      "rev": "f2ba000db7b213900079da6f63f62eb896043d2b",
+      "src": "https://github.com/NBCL-Lang/vim-nbcl"
+    },
     "nord": {
       "rev": "87394d4fc35c901bbe38326a78d31ab1ead826b6",
       "src": "https://github.com/gbprod/nord.nvim"
@@ -64,6 +68,10 @@
       "rev": "5a3a4158857ee1f7ec839b6ddd87cc0083a19c5f",
       "src": "https://github.com/mrcjkb/rustaceanvim",
       "version": "9.0.0 - 10.0.0"
+    },
+    "vim-rhai": {
+      "rev": "b0585e2c92a4a64edcd060836ae41d1e698ebc20",
+      "src": "https://github.com/rhaiscript/vim-rhai"
     }
   }
 }

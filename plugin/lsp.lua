@@ -21,3 +21,4 @@ Plugins.add({
     packopts = { tag = "stable" },
 })
 
+vim.api.nvim_create_user_command("LspInfo", [[ checkhealth vim.lsp ]], { desc = "Alias for checkhealth vim.lsp" })

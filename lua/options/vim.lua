@@ -53,6 +53,7 @@ local options = {
     },
     redrawtime = 10000,
     maxmempattern = 20000,
+    showtabline = 0,
 
     -- File
     backup = false,
@@ -103,15 +104,14 @@ global = {
 }
 
 for k, v in pairs(options) do
-	vim.opt[k] = v
+    vim.opt[k] = v
 end
 
-for k, v in pairs (global) do
+for k, v in pairs(global) do
     vim.g[k] = v
 end
 
 vim.opt.iskeyword:append("-")
 vim.opt.path:append("**")
-vim.opt.clipboard:append("unnamedplus")
 vim.opt.diffopt:append("linematch:60")
 vim.opt.completeopt:append("popup")

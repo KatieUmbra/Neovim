@@ -3,7 +3,9 @@ local M = {
         delete_line = "<leader>dd",
         replace_line = "<leader>dl",
         yank_system = "<leader>ys",
-        paste_system = "<leader>ps"
+        yank_system_line = "<leader>yl",
+        paste_system = "<leader>ps",
+        new_file = "<leader>nf",
     },
     picker = {
         project_files = "<leader>ff",
@@ -42,8 +44,24 @@ local M = {
         format = "<leader>df",
         format_write = "<leader>dF"
     },
-    util = {
-        new_file = "<leader>nf"
+    window = {
+        -- Control + {h,j,k,l}
+        select_left = "<C-h>",
+        select_down = "<C-j>",
+        select_up = "<C-k>",
+        select_right = "<C-l>",
+
+        -- Control + Shift {h,j,k,l}
+        resize_left = "<S-h>",
+        resize_down = "<S-j>",
+        resize_up = "<S-k>",
+        resize_right = "<S-l>",
+
+        -- Alt {h,j,k,l}
+        move_left = "<M-h>",
+        move_down = "<M-j>",
+        move_up = "<M-k>",
+        move_right = "<M-l>",
     }
 }
 

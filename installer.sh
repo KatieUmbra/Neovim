@@ -35,6 +35,7 @@ packages=(
     "fd"
     "ripgrep"
     "git"
+    "wl-clipboard"
     )
 
 var=$( IFS=$' '; echo "${packages[*]}" )
